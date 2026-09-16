@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
+        
 namespace School_System.Models
 {
     public class My_AppContext : DbContext

@@ -15,7 +15,7 @@ namespace School_System.Models
         public string Email { get; set; }
         [MaxLength(20)]
         public string PhoneNumber { get; set; }
-        [Required, Range(-1, int.MaxValue) ]
+        [Required, Range(0, int.MaxValue) ]
         public int Salary { get; set; }
         [ForeignKey("Department")]
         public int DepartmentId { get; set; }
