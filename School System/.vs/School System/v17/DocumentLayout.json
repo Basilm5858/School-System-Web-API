@@ -3,27 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SchoolDB/True/SqlTable/dbo.Teachers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,12 +27,16 @@
       "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\models\\my_appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\my_appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\source\\repos\\school system\\school system\\models\\my_appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\my_appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,27 +46,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.Teachers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SchoolDB/True/SqlTable/dbo.Teachers.sql",
-              "ToolTip": "dbo.Teachers [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-09-16T12:12:40.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "School System\\Controllers\\DepartmentController.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "School System\\Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCIAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Controllers\\DepartmentController.cs*",
+              "RelativeToolTip": "School System\\Controllers\\DepartmentController.cs*",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAIwF8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T11:39:32.834Z",
               "EditorCaption": ""
@@ -82,76 +69,79 @@
               "RelativeDocumentMoniker": "School System\\Models\\My_AppContext.cs",
               "ToolTip": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\My_AppContext.cs",
               "RelativeToolTip": "School System\\Models\\My_AppContext.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAADwvxoAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwBoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T09:17:44.867Z"
+              "WhenOpened": "2026-09-15T09:17:44.867Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ClassRoom.cs",
               "DocumentMoniker": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\ClassRoom.cs",
               "RelativeDocumentMoniker": "School System\\Models\\ClassRoom.cs",
               "ToolTip": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\ClassRoom.cs",
               "RelativeToolTip": "School System\\Models\\ClassRoom.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-15T08:42:59.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Subject.cs",
               "DocumentMoniker": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\Subject.cs",
               "RelativeDocumentMoniker": "School System\\Models\\Subject.cs",
               "ToolTip": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\Subject.cs",
               "RelativeToolTip": "School System\\Models\\Subject.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBIAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T08:32:07.401Z"
+              "WhenOpened": "2026-09-15T08:32:07.401Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\Teacher.cs",
               "RelativeDocumentMoniker": "School System\\Models\\Teacher.cs",
               "ToolTip": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\Teacher.cs",
               "RelativeToolTip": "School System\\Models\\Teacher.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBAAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwBQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T08:23:03.036Z"
+              "WhenOpened": "2026-09-15T08:23:03.036Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\Department.cs",
               "RelativeDocumentMoniker": "School System\\Models\\Department.cs",
               "ToolTip": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\Department.cs",
               "RelativeToolTip": "School System\\Models\\Department.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-15T08:21:07.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Program.cs",
               "RelativeDocumentMoniker": "School System\\Program.cs",
               "ToolTip": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Program.cs",
               "RelativeToolTip": "School System\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwAcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-15T07:06:08.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Enrollment.cs",
               "DocumentMoniker": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\Enrollment.cs",
               "RelativeDocumentMoniker": "School System\\Models\\Enrollment.cs",
@@ -159,19 +149,21 @@
               "RelativeToolTip": "School System\\Models\\Enrollment.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T08:46:37.919Z"
+              "WhenOpened": "2026-09-15T08:46:37.919Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\Student.cs",
               "RelativeDocumentMoniker": "School System\\Models\\Student.cs",
               "ToolTip": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\Models\\Student.cs",
               "RelativeToolTip": "School System\\Models\\Student.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBcAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-15T07:11:01.01Z"
+              "WhenOpened": "2026-09-15T07:11:01.01Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Department API Tester</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 10px 18px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+        }
+
+        .create {
+            background: #28a745;
+        }
+
+        .update {
+            background: #f0ad4e;
+            color: black;
+        }
+
+        .delete {
+            background: #dc3545;
+        }
+
+        .search {
+            background: #6f42c1;
+        }
+
+        #status {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background: #1e1e1e;
+            color: #eee;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 150px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Department API Tester</h1>
+
+
+    <!-- GET ALL -->
+    <div class="card">
+        <h2>Get All Departments</h2>
+
+        <button onclick="getDepartments()">
+            Get Departments
+        </button>
+    </div>
+
+
+    <!-- SEARCH BY TEACHER NAME -->
+    <div class="card">
+
+        <h2>Search By Teacher Full Name</h2>
+
+        <input
+            type="text"
+            id="teacherFullName"
+            placeholder="Example: Ahmed Mohamed">
+
+        <button
+            class="search"
+            onclick="searchByTeacherName()">
+
+            Search
+        </button>
+
+    </div>
+
+
+    <!-- GET BY ID -->
+    <div class="card">
+
+        <h2>Get Department By ID</h2>
+
+        <input
+            type="number"
+            id="getId"
+            placeholder="Department ID">
+
+        <button onclick="getDepartmentById()">
+            Get Department
+        </button>
+
+    </div>
+
+
+    <!-- CREATE -->
+    <div class="card">
+
+        <h2>Create Department</h2>
+
+        <input
+            type="text"
+            id="createName"
+            placeholder="Department Name">
+
+        <input
+            type="text"
+            id="createDescription"
+            placeholder="Description">
+
+        <button
+            class="create"
+            onclick="createDepartment()">
+
+            Create Department
+        </button>
+
+    </div>
+
+
+    <!-- UPDATE -->
+    <div class="card">
+
+        <h2>Update Department</h2>
+
+        <input
+            type="number"
+            id="updateId"
+            placeholder="Department ID">
+
+        <input
+            type="text"
+            id="updateName"
+            placeholder="New Name">
+
+        <input
+            type="text"
+            id="updateDescription"
+            placeholder="New Description">
+
+        <button
+            class="update"
+            onclick="updateDepartment()">
+
+            Update Department
+        </button>
+
+    </div>
+
+
+    <!-- DELETE -->
+    <div class="card">
+
+        <h2>Delete Department</h2>
+
+        <input
+            type="number"
+            id="deleteId"
+            placeholder="Department ID">
+
+        <button
+            class="delete"
+            onclick="deleteDepartment()">
+
+            Delete Department
+        </button>
+
+    </div>
+
+
+    <!-- RESPONSE -->
+    <div class="card">
+
+        <h2>API Response</h2>
+
+        <div id="status">
+            No request yet
+        </div>
+
+        <pre id="response">Waiting...</pre>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    // غير البورت لو الـ API شغال على بورت مختلف
+    const apiUrl = "http://localhost:5203/api/Department";
+
+
+    function showResponse(status, data) {
+
+        document.getElementById("status").textContent =
+            "Status: " + status;
+
+        if (typeof data === "string") {
+
+            document.getElementById("response").textContent =
+                data;
+
+        } else {
+
+            document.getElementById("response").textContent =
+                JSON.stringify(data, null, 2);
+
+        }
+    }
+
+
+
+    // ==================================
+    // GET ALL
+    // ==================================
+
+    async function getDepartments() {
+
+        try {
+
+            const response = await fetch(apiUrl);
+
+            const data = await response.json();
+
+            showResponse(response.status, data);
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // ==================================
+    // SEARCH BY TEACHER FULL NAME
+    // ==================================
+
+    async function searchByTeacherName() {
+
+        const fullName =
+            document.getElementById("teacherFullName").value;
+
+
+        if (!fullName.trim()) {
+
+            alert("Enter Teacher Full Name");
+
+            return;
+        }
+
+
+        try {
+
+            const response = await fetch(
+                `${apiUrl}/Search?fullName=${encodeURIComponent(fullName)}`
+            );
+
+
+            if (!response.ok) {
+
+                const error =
+                    await response.text();
+
+                showResponse(
+                    response.status,
+                    error
+                );
+
+                return;
+            }
+
+
+            const data =
+                await response.json();
+
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse(
+                "ERROR",
+                error.message
+            );
+
+        }
+    }
+
+
+
+    // ==================================
+    // GET BY ID
+    // ==================================
+
+    async function getDepartmentById() {
+
+        const id =
+            document.getElementById("getId").value;
+
+
+        if (!id) {
+
+            alert("Enter Department ID");
+
+            return;
+        }
+
+
+        try {
+
+            const response =
+                await fetch(`${apiUrl}/${id}`);
+
+
+            if (!response.ok) {
+
+                const error =
+                    await response.text();
+
+                showResponse(
+                    response.status,
+                    error
+                );
+
+                return;
+            }
+
+
+            const data =
+                await response.json();
+
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse(
+                "ERROR",
+                error.message
+            );
+
+        }
+    }
+
+
+
+    // ==================================
+    // CREATE
+    // ==================================
+
+    async function createDepartment() {
+
+        const name =
+            document.getElementById("createName").value;
+
+        const description =
+            document.getElementById("createDescription").value;
+
+
+        if (!name.trim()) {
+
+            alert("Enter Department Name");
+
+            return;
+        }
+
+
+        const department = {
+
+            name: name,
+
+            description: description
+
+        };
+
+
+        try {
+
+            const response = await fetch(
+                apiUrl,
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify(department)
+                }
+            );
+
+
+            if (!response.ok) {
+
+                const error =
+                    await response.text();
+
+                showResponse(
+                    response.status,
+                    error
+                );
+
+                return;
+            }
+
+
+            const data =
+                await response.json();
+
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse(
+                "ERROR",
+                error.message
+            );
+
+        }
+    }
+
+
+
+    // ==================================
+    // UPDATE
+    // ==================================
+
+    async function updateDepartment() {
+
+        const id =
+            document.getElementById("updateId").value;
+
+        const name =
+            document.getElementById("updateName").value;
+
+        const description =
+            document.getElementById("updateDescription").value;
+
+
+        if (!id || !name.trim()) {
+
+            alert("Enter Department ID and Name");
+
+            return;
+        }
+
+
+        const department = {
+
+            id: Number(id),
+
+            name: name,
+
+            description: description
+
+        };
+
+
+        try {
+
+            const response =
+                await fetch(
+                    `${apiUrl}/${id}`,
+                    {
+                        method: "PUT",
+
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+
+                        body:
+                            JSON.stringify(department)
+                    }
+                );
+
+
+            // Controller returns NoContent()
+            if (response.status === 204) {
+
+                showResponse(
+                    204,
+                    "Department Updated Successfully"
+                );
+
+                return;
+            }
+
+
+            const error =
+                await response.text();
+
+
+            showResponse(
+                response.status,
+                error
+            );
+
+        }
+        catch (error) {
+
+            showResponse(
+                "ERROR",
+                error.message
+            );
+
+        }
+    }
+
+
+
+    // ==================================
+    // DELETE
+    // ==================================
+
+    async function deleteDepartment() {
+
+        const id =
+            document.getElementById("deleteId").value;
+
+
+        if (!id) {
+
+            alert("Enter Department ID");
+
+            return;
+        }
+
+
+        try {
+
+            const response =
+                await fetch(
+                    `${apiUrl}?id=${id}`,
+                    {
+                        method: "DELETE",
+
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+
+                        // لأن الـ Controller الحالي عندك
+                        // بيطلب Department parameter
+                        body: JSON.stringify({
+                            id: Number(id),
+                            name: "Delete",
+                            description: ""
+                        })
+                    }
+                );
+
+
+            if (response.status === 204) {
+
+                showResponse(
+                    204,
+                    "Department Deleted Successfully"
+                );
+
+                return;
+            }
+
+
+            const error =
+                await response.text();
+
+
+            showResponse(
+                response.status,
+                error
+            );
+
+        }
+        catch (error) {
+
+            showResponse(
+                "ERROR",
+                error.message
+            );
+
+        }
+    }
+
+</script>
+
+</body>
+</html>

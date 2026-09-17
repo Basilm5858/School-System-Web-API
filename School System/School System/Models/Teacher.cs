@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,6 +20,7 @@ namespace School_System.Models
         public int Salary { get; set; }
         [ForeignKey("Department")]
         public int DepartmentId { get; set; }
+        [JsonIgnore]
         public Department Department { get; set; }
         public ICollection<Subject> Subjects { get; set; } = new List<Subject>();
     }
