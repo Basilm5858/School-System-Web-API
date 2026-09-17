@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using School_System.Models;
-
+/////////////
 namespace School_System.Controllers
 {
     [Route("api/[controller]")]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\School System.csproj": {}
+    "C:\\Users\\basel.muhammed\\Desktop\\School System Web API\\School-System-Web-API\\School System\\School System\\School System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\School System.csproj": {
+    "C:\\Users\\basel.muhammed\\Desktop\\School System Web API\\School-System-Web-API\\School System\\School System\\School System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\School System.csproj",
+        "projectUniqueName": "C:\\Users\\basel.muhammed\\Desktop\\School System Web API\\School-System-Web-API\\School System\\School System\\School System.csproj",
         "projectName": "School System",
-        "projectPath": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\School System.csproj",
+        "projectPath": "C:\\Users\\basel.muhammed\\Desktop\\School System Web API\\School-System-Web-API\\School System\\School System\\School System.csproj",
         "packagesPath": "C:\\Users\\basel.muhammed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basel.muhammed\\source\\repos\\School System\\School System\\obj\\",
+        "outputPath": "C:\\Users\\basel.muhammed\\Desktop\\School System Web API\\School-System-Web-API\\School System\\School System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
