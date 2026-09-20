@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using School_System.DTOs.DepartmentDTO.DepartmentDTOs;
+using School_System.DTOs.DepartmentDTOs;
 using School_System.Models;
 /////////////
 namespace School_System.Controllers
@@ -17,10 +19,38 @@ namespace School_System.Controllers
         [HttpGet]
         public async Task<IActionResult> GetDepartments()
         {
-            var res = await _context.Departments.Include(x => x.Teachers).ToListAsync();
-            return Ok(res);
+            var departments = await _context.Departments
+                .Select(d => new DepartmentDTO
+                {
+                    Id = d.Id,
+                    Name = d.Name,
+                    Description = d.Description
+                })
+                .ToListAsync();
+
+            return Ok(departments);
         }
 
+        //[HttpGet]
+        //public async Task<IActionResult> GetDepartments()
+        //{
+        //    var departments = await _context.Departments.ToListAsync();
+
+        //    var result = new List<DepartmentDTO>();
+
+        //    foreach (var department in departments)
+        //    {
+        //        var dto = new DepartmentDTO
+        //        {
+        //            Name = department.Name,
+        //            Description = department.Description
+        //        };
+
+        //        result.Add(dto);
+        //    }
+
+        //    return Ok(result);
+        //}
         [HttpGet("Search")]
         public async Task<IActionResult> SearchByTeacherName(string fullName)
         {
@@ -43,7 +73,12 @@ namespace School_System.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var res = await _context.Departments
-                .Include(x => x.Teachers)
+                .Select(d => new DepartmentDTO
+                {
+                    Id = d.Id,
+                    Name = d.Name,
+                    Description = d.Description
+                })
                 .FirstOrDefaultAsync(x => x.Id == id);
 
             if (res == null)
@@ -55,34 +90,36 @@ namespace School_System.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, Department department)
+        public async Task<IActionResult> UpdateDepartment(int id, UpdateDepartmentDTO dto)
         {
-            var existingDepartment = await _context.Departments
-                .Include(x => x.Teachers).FirstOrDefaultAsync(x => x.Id == id);
+            var dept = await _context.Departments.FindAsync(id);
 
-            if (existingDepartment == null)
+            if (dept == null)
             {
                 return NotFound("Department Not Found");
             }
-            
-            existingDepartment.Name = department.Name;
-            existingDepartment.Description = department.Description;
+
+            dept.Name = dto.Name;
+            dept.Description = dto.Description;
+
             await _context.SaveChangesAsync();
 
             return  NoContent();
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddDepartment(Department department)
+        public async Task<IActionResult> CreateDepartment(CreateDepartmentDTO dto)
         {
-            if (department == null)
+            var department = new Department
             {
-                return BadRequest("The Department cannot be null");
-            }
+                Name = dto.Name,
+                Description = dto.Description
+            };
+
             await _context.Departments.AddAsync(department);
             await _context.SaveChangesAsync();
-
-            return Ok(department);
+        
+            return CreatedAtAction(nameof(GetById), new { id = department.Id }, department);
         }
 
         [HttpDelete]

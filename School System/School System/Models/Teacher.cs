@@ -20,7 +20,6 @@ namespace School_System.Models
         public int Salary { get; set; }
         [ForeignKey("Department")]
         public int DepartmentId { get; set; }
-        [JsonIgnore]
         public Department Department { get; set; }
         public ICollection<Subject> Subjects { get; set; } = new List<Subject>();
     }

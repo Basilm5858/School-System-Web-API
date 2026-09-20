@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Department API Tester</title>
+    <title>School System API Tester</title>
 
     <style>
         * {
@@ -12,19 +11,30 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
             margin: 0;
             padding: 30px;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
         }
 
         h1 {
             text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
         }
 
         .card {
@@ -38,7 +48,7 @@
         input {
             width: 100%;
             padding: 10px;
-            margin: 5px 0;
+            margin: 6px 0;
             border: 1px solid #ccc;
             border-radius: 6px;
         }
@@ -49,8 +59,8 @@
             border: none;
             border-radius: 6px;
             cursor: pointer;
-            background: #007bff;
             color: white;
+            background: #007bff;
         }
 
         .create {
@@ -80,7 +90,7 @@
             color: #eee;
             padding: 20px;
             border-radius: 8px;
-            min-height: 150px;
+            min-height: 160px;
             overflow-x: auto;
         }
     </style>
@@ -90,10 +100,16 @@
 
 <div class="container">
 
-    <h1>Department API Tester</h1>
+    <h1>School System API Tester</h1>
 
 
-    <!-- GET ALL -->
+    <!-- ========================= -->
+    <!-- DEPARTMENTS -->
+    <!-- ========================= -->
+
+    <h2 class="section-title">Departments</h2>
+
+
     <div class="card">
         <h2>Get All Departments</h2>
 
@@ -103,14 +119,26 @@
     </div>
 
 
-    <!-- SEARCH BY TEACHER NAME -->
     <div class="card">
+        <h2>Get Department By ID</h2>
 
-        <h2>Search By Teacher Full Name</h2>
+        <input
+            type="number"
+            id="departmentGetId"
+            placeholder="Department ID">
+
+        <button onclick="getDepartmentById()">
+            Get Department
+        </button>
+    </div>
+
+
+    <div class="card">
+        <h2>Search Department By Teacher Name</h2>
 
         <input
             type="text"
-            id="teacherFullName"
+            id="teacherSearchName"
             placeholder="Example: Ahmed Mohamed">
 
         <button
@@ -119,40 +147,20 @@
 
             Search
         </button>
-
     </div>
 
 
-    <!-- GET BY ID -->
     <div class="card">
-
-        <h2>Get Department By ID</h2>
-
-        <input
-            type="number"
-            id="getId"
-            placeholder="Department ID">
-
-        <button onclick="getDepartmentById()">
-            Get Department
-        </button>
-
-    </div>
-
-
-    <!-- CREATE -->
-    <div class="card">
-
         <h2>Create Department</h2>
 
         <input
             type="text"
-            id="createName"
+            id="departmentCreateName"
             placeholder="Department Name">
 
         <input
             type="text"
-            id="createDescription"
+            id="departmentCreateDescription"
             placeholder="Description">
 
         <button
@@ -161,28 +169,25 @@
 
             Create Department
         </button>
-
     </div>
 
 
-    <!-- UPDATE -->
     <div class="card">
-
         <h2>Update Department</h2>
 
         <input
             type="number"
-            id="updateId"
+            id="departmentUpdateId"
             placeholder="Department ID">
 
         <input
             type="text"
-            id="updateName"
+            id="departmentUpdateName"
             placeholder="New Name">
 
         <input
             type="text"
-            id="updateDescription"
+            id="departmentUpdateDescription"
             placeholder="New Description">
 
         <button
@@ -191,18 +196,15 @@
 
             Update Department
         </button>
-
     </div>
 
 
-    <!-- DELETE -->
     <div class="card">
-
         <h2>Delete Department</h2>
 
         <input
             type="number"
-            id="deleteId"
+            id="departmentDeleteId"
             placeholder="Department ID">
 
         <button
@@ -211,17 +213,281 @@
 
             Delete Department
         </button>
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- CLASSROOMS -->
+    <!-- ========================= -->
+
+    <h2 class="section-title">Class Rooms</h2>
+
+
+    <div class="card">
+
+        <h2>Get All Class Rooms</h2>
+
+        <button onclick="getClassRooms()">
+            Get Class Rooms
+        </button>
 
     </div>
 
 
-    <!-- RESPONSE -->
     <div class="card">
 
-        <h2>API Response</h2>
+        <h2>Get Class Room By ID</h2>
+
+        <input
+            type="number"
+            id="classRoomGetId"
+            placeholder="Class Room ID">
+
+        <button onclick="getClassRoomById()">
+            Get Class Room
+        </button>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Create Class Room</h2>
+
+        <input
+            type="text"
+            id="classRoomCreateName"
+            placeholder="Class Room Name">
+
+        <input
+            type="number"
+            id="classRoomCreateCapacity"
+            placeholder="Capacity">
+
+        <input
+            type="text"
+            id="classRoomCreateGrade"
+            placeholder="Grade Level">
+
+        <button
+            class="create"
+            onclick="createClassRoom()">
+
+            Create Class Room
+        </button>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Update Class Room</h2>
+
+        <input
+            type="number"
+            id="classRoomUpdateId"
+            placeholder="Class Room ID">
+
+        <input
+            type="text"
+            id="classRoomUpdateName"
+            placeholder="Name">
+
+        <input
+            type="number"
+            id="classRoomUpdateCapacity"
+            placeholder="Capacity">
+
+        <input
+            type="text"
+            id="classRoomUpdateGrade"
+            placeholder="Grade Level">
+
+        <button
+            class="update"
+            onclick="updateClassRoom()">
+
+            Update Class Room
+        </button>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Delete Class Room</h2>
+
+        <input
+            type="number"
+            id="classRoomDeleteId"
+            placeholder="Class Room ID">
+
+        <button
+            class="delete"
+            onclick="deleteClassRoom()">
+
+            Delete Class Room
+        </button>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- TEACHERS -->
+    <!-- ========================= -->
+
+    <h2 class="section-title">Teachers</h2>
+
+
+    <div class="card">
+
+        <h2>Get All Teachers</h2>
+
+        <button onclick="getTeachers()">
+            Get Teachers
+        </button>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Get Teacher By ID</h2>
+
+        <input
+            type="number"
+            id="teacherGetId"
+            placeholder="Teacher ID">
+
+        <button onclick="getTeacherById()">
+            Get Teacher
+        </button>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Create Teacher</h2>
+
+        <input
+            type="text"
+            id="teacherCreateFirstName"
+            placeholder="First Name">
+
+        <input
+            type="text"
+            id="teacherCreateLastName"
+            placeholder="Last Name">
+
+        <input
+            type="email"
+            id="teacherCreateEmail"
+            placeholder="Email">
+
+        <input
+            type="text"
+            id="teacherCreatePhone"
+            placeholder="Phone Number">
+
+        <input
+            type="number"
+            id="teacherCreateSalary"
+            placeholder="Salary">
+
+        <input
+            type="number"
+            id="teacherCreateDepartmentId"
+            placeholder="Department ID">
+
+        <button
+            class="create"
+            onclick="createTeacher()">
+
+            Create Teacher
+        </button>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Update Teacher</h2>
+
+        <input
+            type="number"
+            id="teacherUpdateId"
+            placeholder="Teacher ID">
+
+        <input
+            type="text"
+            id="teacherUpdateFirstName"
+            placeholder="First Name">
+
+        <input
+            type="text"
+            id="teacherUpdateLastName"
+            placeholder="Last Name">
+
+        <input
+            type="email"
+            id="teacherUpdateEmail"
+            placeholder="Email">
+
+        <input
+            type="text"
+            id="teacherUpdatePhone"
+            placeholder="Phone Number">
+
+        <input
+            type="number"
+            id="teacherUpdateSalary"
+            placeholder="Salary">
+
+        <input
+            type="number"
+            id="teacherUpdateDepartmentId"
+            placeholder="Department ID">
+
+        <button
+            class="update"
+            onclick="updateTeacher()">
+
+            Update Teacher
+        </button>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Delete Teacher</h2>
+
+        <input
+            type="number"
+            id="teacherDeleteId"
+            placeholder="Teacher ID">
+
+        <button
+            class="delete"
+            onclick="deleteTeacher()">
+
+            Delete Teacher
+        </button>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- RESPONSE -->
+    <!-- ========================= -->
+
+    <h2 class="section-title">API Response</h2>
+
+    <div class="card">
 
         <div id="status">
-            No request yet
+            No request sent yet
         </div>
 
         <pre id="response">Waiting...</pre>
@@ -233,43 +499,78 @@
 
 <script>
 
-    // غير البورت لو الـ API شغال على بورت مختلف
-    const apiUrl = "http://localhost:5203/api/Department";
+    // ================================
+    // API URLs
+    // ================================
 
+    const baseUrl = "http://localhost:5203/api";
+
+    const departmentUrl = `${baseUrl}/Department`;
+
+    const classRoomUrl = `${baseUrl}/ClassRooms`;
+
+    const teacherUrl = `${baseUrl}/Teacher`;
+
+
+
+    // ================================
+    // RESPONSE HELPER
+    // ================================
 
     function showResponse(status, data) {
 
         document.getElementById("status").textContent =
             "Status: " + status;
 
-        if (typeof data === "string") {
+        document.getElementById("response").textContent =
+            typeof data === "string"
+                ? data
+                : JSON.stringify(data, null, 2);
+    }
 
-            document.getElementById("response").textContent =
-                data;
 
-        } else {
+    async function readResponse(response) {
 
-            document.getElementById("response").textContent =
-                JSON.stringify(data, null, 2);
+        if (response.status === 204) {
+            return null;
+        }
 
+        const text = await response.text();
+
+        if (!text) {
+            return null;
+        }
+
+        try {
+            return JSON.parse(text);
+        }
+        catch {
+            return text;
         }
     }
 
 
+    // ==================================================
+    // DEPARTMENTS
+    // ==================================================
 
-    // ==================================
-    // GET ALL
-    // ==================================
+
+    // GET /api/Department
 
     async function getDepartments() {
 
         try {
 
-            const response = await fetch(apiUrl);
+            const response =
+                await fetch(departmentUrl);
 
-            const data = await response.json();
+            const data =
+                await readResponse(response);
 
-            showResponse(response.status, data);
+            showResponse(
+                response.status,
+                data
+            );
 
         }
         catch (error) {
@@ -281,76 +582,12 @@
 
 
 
-    // ==================================
-    // SEARCH BY TEACHER FULL NAME
-    // ==================================
-
-    async function searchByTeacherName() {
-
-        const fullName =
-            document.getElementById("teacherFullName").value;
-
-
-        if (!fullName.trim()) {
-
-            alert("Enter Teacher Full Name");
-
-            return;
-        }
-
-
-        try {
-
-            const response = await fetch(
-                `${apiUrl}/Search?fullName=${encodeURIComponent(fullName)}`
-            );
-
-
-            if (!response.ok) {
-
-                const error =
-                    await response.text();
-
-                showResponse(
-                    response.status,
-                    error
-                );
-
-                return;
-            }
-
-
-            const data =
-                await response.json();
-
-
-            showResponse(
-                response.status,
-                data
-            );
-
-        }
-        catch (error) {
-
-            showResponse(
-                "ERROR",
-                error.message
-            );
-
-        }
-    }
-
-
-
-    // ==================================
-    // GET BY ID
-    // ==================================
+    // GET /api/Department/{id}
 
     async function getDepartmentById() {
 
         const id =
-            document.getElementById("getId").value;
-
+            document.getElementById("departmentGetId").value;
 
         if (!id) {
 
@@ -359,30 +596,13 @@
             return;
         }
 
-
         try {
 
             const response =
-                await fetch(`${apiUrl}/${id}`);
-
-
-            if (!response.ok) {
-
-                const error =
-                    await response.text();
-
-                showResponse(
-                    response.status,
-                    error
-                );
-
-                return;
-            }
-
+                await fetch(`${departmentUrl}/${id}`);
 
             const data =
-                await response.json();
-
+                await readResponse(response);
 
             showResponse(
                 response.status,
@@ -392,79 +612,83 @@
         }
         catch (error) {
 
-            showResponse(
-                "ERROR",
-                error.message
-            );
+            showResponse("ERROR", error.message);
 
         }
     }
 
 
 
-    // ==================================
-    // CREATE
-    // ==================================
+    // GET /api/Department/Search?fullName=...
 
-    async function createDepartment() {
+    async function searchByTeacherName() {
 
-        const name =
-            document.getElementById("createName").value;
+        const fullName =
+            document.getElementById("teacherSearchName").value;
 
-        const description =
-            document.getElementById("createDescription").value;
+        if (!fullName.trim()) {
 
-
-        if (!name.trim()) {
-
-            alert("Enter Department Name");
+            alert("Enter Teacher Full Name");
 
             return;
         }
 
+        try {
 
-        const department = {
+            const response =
+                await fetch(
+                    `${departmentUrl}/Search?fullName=${encodeURIComponent(fullName)}`
+                );
 
+            const data =
+                await readResponse(response);
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // POST /api/Department
+
+    async function createDepartment() {
+
+        const name =
+            document.getElementById("departmentCreateName").value;
+
+        const description =
+            document.getElementById("departmentCreateDescription").value;
+
+        const dto = {
             name: name,
-
             description: description
-
         };
-
 
         try {
 
-            const response = await fetch(
-                apiUrl,
-                {
+            const response =
+                await fetch(departmentUrl, {
+
                     method: "POST",
 
                     headers: {
                         "Content-Type": "application/json"
                     },
 
-                    body: JSON.stringify(department)
-                }
-            );
-
-
-            if (!response.ok) {
-
-                const error =
-                    await response.text();
-
-                showResponse(
-                    response.status,
-                    error
-                );
-
-                return;
-            }
-
+                    body: JSON.stringify(dto)
+                });
 
             const data =
-                await response.json();
-
+                await readResponse(response);
 
             showResponse(
                 response.status,
@@ -474,70 +698,46 @@
         }
         catch (error) {
 
-            showResponse(
-                "ERROR",
-                error.message
-            );
+            showResponse("ERROR", error.message);
 
         }
     }
 
 
 
-    // ==================================
-    // UPDATE
-    // ==================================
+    // PUT /api/Department/{id}
 
     async function updateDepartment() {
 
         const id =
-            document.getElementById("updateId").value;
+            document.getElementById("departmentUpdateId").value;
 
         const name =
-            document.getElementById("updateName").value;
+            document.getElementById("departmentUpdateName").value;
 
         const description =
-            document.getElementById("updateDescription").value;
+            document.getElementById("departmentUpdateDescription").value;
 
-
-        if (!id || !name.trim()) {
-
-            alert("Enter Department ID and Name");
-
-            return;
-        }
-
-
-        const department = {
-
-            id: Number(id),
-
+        const dto = {
             name: name,
-
             description: description
-
         };
-
 
         try {
 
             const response =
-                await fetch(
-                    `${apiUrl}/${id}`,
-                    {
-                        method: "PUT",
+                await fetch(`${departmentUrl}/${id}`, {
 
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
+                    method: "PUT",
 
-                        body:
-                            JSON.stringify(department)
-                    }
-                );
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify(dto)
+                });
 
 
-            // Controller returns NoContent()
             if (response.status === 204) {
 
                 showResponse(
@@ -549,37 +749,30 @@
             }
 
 
-            const error =
-                await response.text();
-
+            const data =
+                await readResponse(response);
 
             showResponse(
                 response.status,
-                error
+                data
             );
 
         }
         catch (error) {
 
-            showResponse(
-                "ERROR",
-                error.message
-            );
+            showResponse("ERROR", error.message);
 
         }
     }
 
 
 
-    // ==================================
-    // DELETE
-    // ==================================
+    // DELETE /api/Department?id=1
 
     async function deleteDepartment() {
 
         const id =
-            document.getElementById("deleteId").value;
-
+            document.getElementById("departmentDeleteId").value;
 
         if (!id) {
 
@@ -589,11 +782,16 @@
         }
 
 
+        if (!confirm("Delete this Department?")) {
+            return;
+        }
+
+
         try {
 
             const response =
                 await fetch(
-                    `${apiUrl}?id=${id}`,
+                    `${departmentUrl}?id=${id}`,
                     {
                         method: "DELETE",
 
@@ -601,8 +799,6 @@
                             "Content-Type": "application/json"
                         },
 
-                        // لأن الـ Controller الحالي عندك
-                        // بيطلب Department parameter
                         body: JSON.stringify({
                             id: Number(id),
                             name: "Delete",
@@ -623,22 +819,533 @@
             }
 
 
-            const error =
-                await response.text();
-
+            const data =
+                await readResponse(response);
 
             showResponse(
                 response.status,
-                error
+                data
             );
 
         }
         catch (error) {
 
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // ==================================================
+    // CLASS ROOMS
+    // ==================================================
+
+
+    // GET /api/ClassRooms
+
+    async function getClassRooms() {
+
+        try {
+
+            const response =
+                await fetch(classRoomUrl);
+
+            const data =
+                await readResponse(response);
+
             showResponse(
-                "ERROR",
-                error.message
+                response.status,
+                data
             );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // GET /api/ClassRooms/{id}
+
+    async function getClassRoomById() {
+
+        const id =
+            document.getElementById("classRoomGetId").value;
+
+        if (!id) {
+
+            alert("Enter Class Room ID");
+
+            return;
+        }
+
+        try {
+
+            const response =
+                await fetch(`${classRoomUrl}/${id}`);
+
+            const data =
+                await readResponse(response);
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // POST /api/ClassRooms
+
+    async function createClassRoom() {
+
+        const dto = {
+
+            name:
+                document.getElementById("classRoomCreateName").value,
+
+            capacity:
+                Number(
+                    document.getElementById("classRoomCreateCapacity").value
+                ),
+
+            gradeLevel:
+                document.getElementById("classRoomCreateGrade").value
+        };
+
+
+        try {
+
+            const response =
+                await fetch(classRoomUrl, {
+
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify(dto)
+                });
+
+
+            const data =
+                await readResponse(response);
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // PUT /api/ClassRooms/{id}
+
+    async function updateClassRoom() {
+
+        const id =
+            document.getElementById("classRoomUpdateId").value;
+
+
+        const dto = {
+
+            name:
+                document.getElementById("classRoomUpdateName").value,
+
+            capacity:
+                Number(
+                    document.getElementById("classRoomUpdateCapacity").value
+                ),
+
+            gradeLevel:
+                document.getElementById("classRoomUpdateGrade").value
+        };
+
+
+        try {
+
+            const response =
+                await fetch(`${classRoomUrl}/${id}`, {
+
+                    method: "PUT",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify(dto)
+                });
+
+
+            if (response.status === 204) {
+
+                showResponse(
+                    204,
+                    "Class Room Updated Successfully"
+                );
+
+                return;
+            }
+
+
+            const data =
+                await readResponse(response);
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // DELETE /api/ClassRooms?id=1
+
+    async function deleteClassRoom() {
+
+        const id =
+            document.getElementById("classRoomDeleteId").value;
+
+
+        if (!id) {
+
+            alert("Enter Class Room ID");
+
+            return;
+        }
+
+
+        if (!confirm("Delete this Class Room?")) {
+            return;
+        }
+
+
+        try {
+
+            const response =
+                await fetch(
+                    `${classRoomUrl}?id=${id}`,
+                    {
+                        method: "DELETE"
+                    }
+                );
+
+
+            if (response.status === 204) {
+
+                showResponse(
+                    204,
+                    "Class Room Deleted Successfully"
+                );
+
+                return;
+            }
+
+
+            const data =
+                await readResponse(response);
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // ==================================================
+    // TEACHERS
+    // ==================================================
+
+
+    // GET /api/Teacher
+
+    async function getTeachers() {
+
+        try {
+
+            const response =
+                await fetch(teacherUrl);
+
+            const data =
+                await readResponse(response);
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // GET /api/Teacher/{id}
+
+    async function getTeacherById() {
+
+        const id =
+            document.getElementById("teacherGetId").value;
+
+        if (!id) {
+
+            alert("Enter Teacher ID");
+
+            return;
+        }
+
+
+        try {
+
+            const response =
+                await fetch(`${teacherUrl}/${id}`);
+
+            const data =
+                await readResponse(response);
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // POST /api/Teacher
+
+    async function createTeacher() {
+
+        const dto = {
+
+            firstName:
+                document.getElementById("teacherCreateFirstName").value,
+
+            lastName:
+                document.getElementById("teacherCreateLastName").value,
+
+            email:
+                document.getElementById("teacherCreateEmail").value,
+
+            phoneNumber:
+                document.getElementById("teacherCreatePhone").value,
+
+            salary:
+                Number(
+                    document.getElementById("teacherCreateSalary").value
+                ),
+
+            departmentId:
+                Number(
+                    document.getElementById("teacherCreateDepartmentId").value
+                )
+        };
+
+
+        try {
+
+            const response =
+                await fetch(teacherUrl, {
+
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body:
+                        JSON.stringify(dto)
+                });
+
+
+            const data =
+                await readResponse(response);
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // PUT /api/Teacher?id=1
+
+    async function updateTeacher() {
+
+        const id =
+            document.getElementById("teacherUpdateId").value;
+
+
+        const dto = {
+
+            firstName:
+                document.getElementById("teacherUpdateFirstName").value,
+
+            lastName:
+                document.getElementById("teacherUpdateLastName").value,
+
+            email:
+                document.getElementById("teacherUpdateEmail").value,
+
+            phoneNumber:
+                document.getElementById("teacherUpdatePhone").value,
+
+            salary:
+                Number(
+                    document.getElementById("teacherUpdateSalary").value
+                ),
+
+            departmentId:
+                Number(
+                    document.getElementById("teacherUpdateDepartmentId").value
+                )
+        };
+
+
+        try {
+
+            const response =
+                await fetch(
+                    `${teacherUrl}?id=${id}`,
+                    {
+                        method: "PUT",
+
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+
+                        body:
+                            JSON.stringify(dto)
+                    }
+                );
+
+
+            const data =
+                await readResponse(response);
+
+
+            showResponse(
+                response.status,
+                data ?? "Teacher Updated Successfully"
+            );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
+
+        }
+    }
+
+
+
+    // DELETE /api/Teacher?id=1
+
+    async function deleteTeacher() {
+
+        const id =
+            document.getElementById("teacherDeleteId").value;
+
+
+        if (!id) {
+
+            alert("Enter Teacher ID");
+
+            return;
+        }
+
+
+        if (!confirm("Delete this Teacher?")) {
+            return;
+        }
+
+
+        try {
+
+            const response =
+                await fetch(
+                    `${teacherUrl}?id=${id}`,
+                    {
+                        method: "DELETE"
+                    }
+                );
+
+
+            if (response.status === 204) {
+
+                showResponse(
+                    204,
+                    "Teacher Deleted Successfully"
+                );
+
+                return;
+            }
+
+
+            const data =
+                await readResponse(response);
+
+            showResponse(
+                response.status,
+                data
+            );
+
+        }
+        catch (error) {
+
+            showResponse("ERROR", error.message);
 
         }
     }
