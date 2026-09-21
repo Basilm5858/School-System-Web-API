@@ -16,7 +16,7 @@ namespace School_System.Models
         [ForeignKey(nameof(Teacher))]
         public int TeacherId { get; set; }
         public Teacher Teacher { get; set; }
-        public ICollection<Enrollment> Enrollment { get; set; } = new List<Enrollment>();
+        public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
 
     }
 }

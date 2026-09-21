@@ -20,7 +20,7 @@ namespace School_System.Models
         public ClassRoom ClassRoom { get; set; }
         [ForeignKey(nameof(ClassRoom))]
         public int ClassRoomId { get; set; }
-        public ICollection<Enrollment> Enrollment { get; set; } = new List<Enrollment>();
-        public ICollection<Subject> Subject { get; set; } = new List<Subject>();
+        public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
+        public ICollection<Subject> Subjects { get; set; } = new List<Subject>();
     }
 }

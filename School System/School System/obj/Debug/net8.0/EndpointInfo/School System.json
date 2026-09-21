@@ -622,14 +622,14 @@
             "type": "integer",
             "format": "int32"
           },
-          "enrollment": {
+          "enrollments": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Enrollment"
             },
             "nullable": true
           },
-          "subject": {
+          "subjects": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Subject"
@@ -673,7 +673,7 @@
           "teacher": {
             "$ref": "#/components/schemas/Teacher"
           },
-          "enrollment": {
+          "enrollments": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Enrollment"
@@ -780,6 +780,18 @@
           "lastName": {
             "type": "string",
             "nullable": true
+          },
+          "salary": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "departmentId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

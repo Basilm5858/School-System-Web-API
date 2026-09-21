@@ -12,7 +12,7 @@ using School_System.Models;
 namespace School_System.Migrations
 {
     [DbContext(typeof(My_AppContext))]
-    [Migration("20260915094912_Init")]
+    [Migration("20260921115040_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -46,6 +46,29 @@ namespace School_System.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Classrooms");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Capacity = 30,
+                            GradeLevel = 10,
+                            Name = "Room 101"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Capacity = 30,
+                            GradeLevel = 11,
+                            Name = "Room 102"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Capacity = 30,
+                            GradeLevel = 12,
+                            Name = "Room 103"
+                        });
                 });
 
             modelBuilder.Entity("School_System.Models.Department", b =>
@@ -69,15 +92,35 @@ namespace School_System.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Departments");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Department of Mathematics",
+                            Name = "Mathematics"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Department of Physics",
+                            Name = "Physics"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Department of Chemistry",
+                            Name = "Chemistry"
+                        });
                 });
 
             modelBuilder.Entity("School_System.Models.Enrollment", b =>
                 {
-                    b.Property<int>("StudentId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("SubjectId")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("EnrollmentDate")
                         .HasColumnType("datetime2");
@@ -85,14 +128,46 @@ namespace School_System.Migrations
                     b.Property<decimal>("Grade")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("Id")
+                    b.Property<int>("StudentId")
                         .HasColumnType("int");
 
-                    b.HasKey("StudentId", "SubjectId");
+                    b.Property<int>("SubjectId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("SubjectId");
 
+                    b.HasIndex("StudentId", "SubjectId")
+                        .IsUnique();
+
                     b.ToTable("Enrollments");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            EnrollmentDate = new DateTime(2023, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Grade = 90m,
+                            StudentId = 1,
+                            SubjectId = 2
+                        },
+                        new
+                        {
+                            Id = 2,
+                            EnrollmentDate = new DateTime(2023, 1, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Grade = 85m,
+                            StudentId = 2,
+                            SubjectId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            EnrollmentDate = new DateTime(2023, 1, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Grade = 88m,
+                            StudentId = 3,
+                            SubjectId = 2
+                        });
                 });
 
             modelBuilder.Entity("School_System.Models.Student", b =>
@@ -135,6 +210,38 @@ namespace School_System.Migrations
                         .IsUnique();
 
                     b.ToTable("Students");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ClassRoomId = 1,
+                            DateOfBirth = new DateOnly(2000, 1, 1),
+                            Email = "basil.mohamed@example.com",
+                            FirstName = "Basil",
+                            LastName = "Mohamed",
+                            PhoneNumber = "01158589053"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ClassRoomId = 2,
+                            DateOfBirth = new DateOnly(2001, 5, 15),
+                            Email = "ahmed.ali@example.com",
+                            FirstName = "Ahmed",
+                            LastName = "Ali",
+                            PhoneNumber = "01158589054"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ClassRoomId = 3,
+                            DateOfBirth = new DateOnly(2002, 9, 20),
+                            Email = "fatima.mohamed@example.com",
+                            FirstName = "Fatima",
+                            LastName = "Mohamed",
+                            PhoneNumber = "01158589055"
+                        });
                 });
 
             modelBuilder.Entity("School_System.Models.Subject", b =>
@@ -171,6 +278,32 @@ namespace School_System.Migrations
                     b.HasIndex("TeacherId");
 
                     b.ToTable("Subjects");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Mathematics subject",
+                            MaxGrade = 100,
+                            Name = "Mathematics",
+                            TeacherId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Physics subject",
+                            MaxGrade = 100,
+                            Name = "Physics",
+                            TeacherId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Chemistry subject",
+                            MaxGrade = 100,
+                            Name = "Chemistry",
+                            TeacherId = 3
+                        });
                 });
 
             modelBuilder.Entity("School_System.Models.Teacher", b =>
@@ -212,18 +345,70 @@ namespace School_System.Migrations
                         .IsUnique();
 
                     b.ToTable("Teachers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DepartmentId = 1,
+                            Email = "john.doe@example.com",
+                            FirstName = "John",
+                            LastName = "Doe",
+                            PhoneNumber = "01158589056",
+                            Salary = 50000
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DepartmentId = 2,
+                            Email = "jane.smith@example.com",
+                            FirstName = "Jane",
+                            LastName = "Smith",
+                            PhoneNumber = "01158589057",
+                            Salary = 55000
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DepartmentId = 3,
+                            Email = "bob.johnson@example.com",
+                            FirstName = "Bob",
+                            LastName = "Johnson",
+                            PhoneNumber = "01158589058",
+                            Salary = 60000
+                        },
+                        new
+                        {
+                            Id = 4,
+                            DepartmentId = 1,
+                            Email = "alice.williams@example.com",
+                            FirstName = "Alice",
+                            LastName = "Williams",
+                            PhoneNumber = "01158589059",
+                            Salary = 52000
+                        },
+                        new
+                        {
+                            Id = 5,
+                            DepartmentId = 2,
+                            Email = "charlie.brown@example.com",
+                            FirstName = "Charlie",
+                            LastName = "Brown",
+                            PhoneNumber = "01158589060",
+                            Salary = 58000
+                        });
                 });
 
             modelBuilder.Entity("School_System.Models.Enrollment", b =>
                 {
-                    b.HasOne("School_System.Models.Subject", "Subject")
-                        .WithMany("Enrollment")
+                    b.HasOne("School_System.Models.Student", "Student")
+                        .WithMany("Enrollments")
                         .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("School_System.Models.Student", "Student")
-                        .WithMany("Enrollment")
+                    b.HasOne("School_System.Models.Subject", "Subject")
+                        .WithMany("Enrollments")
                         .HasForeignKey("SubjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -247,7 +432,7 @@ namespace School_System.Migrations
             modelBuilder.Entity("School_System.Models.Subject", b =>
                 {
                     b.HasOne("School_System.Models.Student", null)
-                        .WithMany("Subject")
+                        .WithMany("Subjects")
                         .HasForeignKey("StudentId");
 
                     b.HasOne("School_System.Models.Teacher", "Teacher")
@@ -282,14 +467,14 @@ namespace School_System.Migrations
 
             modelBuilder.Entity("School_System.Models.Student", b =>
                 {
-                    b.Navigation("Enrollment");
+                    b.Navigation("Enrollments");
 
-                    b.Navigation("Subject");
+                    b.Navigation("Subjects");
                 });
 
             modelBuilder.Entity("School_System.Models.Subject", b =>
                 {
-                    b.Navigation("Enrollment");
+                    b.Navigation("Enrollments");
                 });
 
             modelBuilder.Entity("School_System.Models.Teacher", b =>

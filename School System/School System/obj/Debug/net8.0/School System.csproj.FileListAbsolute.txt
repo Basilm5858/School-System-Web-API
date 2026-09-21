@@ -279,3 +279,144 @@ C:\Users\basel.muhammed\Desktop\School System Web API\School-System-Web-API\Scho
 C:\Users\basel.muhammed\Desktop\School System Web API\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.pdb
 C:\Users\basel.muhammed\Desktop\School System Web API\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.genruntimeconfig.cache
 C:\Users\basel.muhammed\Desktop\School System Web API\School-System-Web-API\School System\School System\obj\Debug\net8.0\ref\School System.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\appsettings.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\School System.staticwebassets.endpoints.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\School System.exe
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\School System.deps.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\School System.runtimeconfig.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\School System.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\School System.pdb
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Humanizer.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.csproj.AssemblyReference.cache
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.AssemblyInfoInputs.cache
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.AssemblyInfo.cs
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.csproj.CoreCompileInputs.cache
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.sourcelink.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\scopedcss\bundle\School System.styles.css
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School S.A2E44400.Up2Date
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\refint\School System.dll
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.pdb
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.genruntimeconfig.cache
+C:\Users\basil\OneDrive\Desktop\School-System-Web-API\School System\School System\obj\Debug\net8.0\ref\School System.dll
