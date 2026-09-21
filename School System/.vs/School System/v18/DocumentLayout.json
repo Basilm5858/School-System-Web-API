@@ -1,86 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\",
+  "WorkspaceRootPath": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\models\\my_appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\my_appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\controllers\\classroomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\classroomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\dtos\\teacherdtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\controllers\\classroomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\classroomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\dtos\\teacherdtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\teacherdtos\\teacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\dtos\\teacherdtos\\updateteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\teacherdtos\\updateteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\dtos\\teacherdtos\\createteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\teacherdtos\\createteacherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\dtos\\classroomdtos\\createclassroomsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\classroomdtos\\createclassroomsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\dtos\\departmentdtos\\updatedepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\departmentdtos\\updatedepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\dtos\\departmentdtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\departmentdtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\dtos\\classroomdtos\\updateclassroomsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\classroomdtos\\updateclassroomsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\dtos\\classroomdtos\\classroomsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\classroomdtos\\classroomsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\dtos\\departmentdtos\\createdepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\departmentdtos\\createdepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system-web-api\\school system\\school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\models\\my_appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\my_appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basil\\onedrive\\desktop\\school-system\\school-system-web-api\\school-system-web-api\\school system\\school system\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,56 +62,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Enrollment.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\Enrollment.cs",
-              "RelativeDocumentMoniker": "School System\\Models\\Enrollment.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\Enrollment.cs",
-              "RelativeToolTip": "School System\\Models\\Enrollment.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "TeacherDTO.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\DTOs\\TeacherDTOs\\TeacherDTO.cs",
+              "RelativeDocumentMoniker": "School System\\DTOs\\TeacherDTOs\\TeacherDTO.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\DTOs\\TeacherDTOs\\TeacherDTO.cs",
+              "RelativeToolTip": "School System\\DTOs\\TeacherDTOs\\TeacherDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Subject.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\Subject.cs",
-              "RelativeDocumentMoniker": "School System\\Models\\Subject.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\Subject.cs",
-              "RelativeToolTip": "School System\\Models\\Subject.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.929Z",
+              "WhenOpened": "2026-09-21T14:56:29.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Department.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\Department.cs",
-              "RelativeDocumentMoniker": "School System\\Models\\Department.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\Department.cs",
-              "RelativeToolTip": "School System\\Models\\Department.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "School System\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "School System\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.911Z",
+              "WhenOpened": "2026-09-21T14:33:46.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\Subject.cs",
+              "RelativeDocumentMoniker": "School System\\Models\\Subject.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\Subject.cs",
+              "RelativeToolTip": "School System\\Models\\Subject.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:33:36.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "School System\\Models\\Department.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\Department.cs",
+              "RelativeToolTip": "School System\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:33:36.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "My_AppContext.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\My_AppContext.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\My_AppContext.cs",
               "RelativeDocumentMoniker": "School System\\Models\\My_AppContext.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\My_AppContext.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\My_AppContext.cs",
               "RelativeToolTip": "School System\\Models\\My_AppContext.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAhwB4AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAC4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T11:33:36.924Z",
               "EditorCaption": ""
@@ -147,199 +130,102 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\Teacher.cs",
-              "RelativeDocumentMoniker": "School System\\Models\\Teacher.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\Teacher.cs",
-              "RelativeToolTip": "School System\\Models\\Teacher.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBMAAAAnAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Program.cs",
+              "RelativeDocumentMoniker": "School System\\Program.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Program.cs",
+              "RelativeToolTip": "School System\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClassRoom.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\ClassRoom.cs",
-              "RelativeDocumentMoniker": "School System\\Models\\ClassRoom.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\ClassRoom.cs",
-              "RelativeToolTip": "School System\\Models\\ClassRoom.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "School System\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Models\\Student.cs",
-              "RelativeToolTip": "School System\\Models\\Student.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.945Z",
+              "WhenOpened": "2026-09-21T11:33:36.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "School System\\Models\\Enrollment.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\Enrollment.cs",
+              "RelativeToolTip": "School System\\Models\\Enrollment.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:33:36.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\Teacher.cs",
+              "RelativeDocumentMoniker": "School System\\Models\\Teacher.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\Teacher.cs",
+              "RelativeToolTip": "School System\\Models\\Teacher.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:33:36.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClassRoom.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\ClassRoom.cs",
+              "RelativeDocumentMoniker": "School System\\Models\\ClassRoom.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\ClassRoom.cs",
+              "RelativeToolTip": "School System\\Models\\ClassRoom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:33:36.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "School System\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Models\\Student.cs",
+              "RelativeToolTip": "School System\\Models\\Student.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:33:36.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ClassRoomsController.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Controllers\\ClassRoomsController.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Controllers\\ClassRoomsController.cs",
               "RelativeDocumentMoniker": "School System\\Controllers\\ClassRoomsController.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Controllers\\ClassRoomsController.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Controllers\\ClassRoomsController.cs",
               "RelativeToolTip": "School System\\Controllers\\ClassRoomsController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAiwFoAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAswDQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T11:33:36.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "TeacherController.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Controllers\\TeacherController.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Controllers\\TeacherController.cs",
               "RelativeDocumentMoniker": "School System\\Controllers\\TeacherController.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Controllers\\TeacherController.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Controllers\\TeacherController.cs",
               "RelativeToolTip": "School System\\Controllers\\TeacherController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAiwGMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAewA4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T11:33:36.721Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UpdateTeacherDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\TeacherDTOs\\UpdateTeacherDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\TeacherDTOs\\UpdateTeacherDTO.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\TeacherDTOs\\UpdateTeacherDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\TeacherDTOs\\UpdateTeacherDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreateTeacherDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\TeacherDTOs\\CreateTeacherDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\TeacherDTOs\\CreateTeacherDTO.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\TeacherDTOs\\CreateTeacherDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\TeacherDTOs\\CreateTeacherDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TeacherDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\TeacherDTOs\\TeacherDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\TeacherDTOs\\TeacherDTO.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\TeacherDTOs\\TeacherDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\TeacherDTOs\\TeacherDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "DepartmentController.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Controllers\\DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "School System\\Controllers\\DepartmentController.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\Controllers\\DepartmentController.cs",
               "RelativeToolTip": "School System\\Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAiwIEAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAswEkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UpdateClassRoomsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\ClassRoomDTOs\\UpdateClassRoomsDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\ClassRoomDTOs\\UpdateClassRoomsDTO.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\ClassRoomDTOs\\UpdateClassRoomsDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\ClassRoomDTOs\\UpdateClassRoomsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreateClassRoomsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\ClassRoomDTOs\\CreateClassRoomsDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\ClassRoomDTOs\\CreateClassRoomsDTO.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\ClassRoomDTOs\\CreateClassRoomsDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\ClassRoomDTOs\\CreateClassRoomsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.872Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ClassRoomsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\ClassRoomDTOs\\ClassRoomsDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\ClassRoomDTOs\\ClassRoomsDTO.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\ClassRoomDTOs\\ClassRoomsDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\ClassRoomDTOs\\ClassRoomsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.878Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UpdateDepartmentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\DepartmentDTOs\\UpdateDepartmentDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\DepartmentDTOs\\UpdateDepartmentDTO.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\DepartmentDTOs\\UpdateDepartmentDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\DepartmentDTOs\\UpdateDepartmentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DepartmentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\DepartmentDTOs\\DepartmentDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\DepartmentDTOs\\DepartmentDTO.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\DepartmentDTOs\\DepartmentDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\DepartmentDTOs\\DepartmentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.891Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CreateDepartmentDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\DepartmentDTOs\\CreateDepartmentDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\DepartmentDTOs\\CreateDepartmentDTO.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\DTOs\\DepartmentDTOs\\CreateDepartmentDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\DepartmentDTOs\\CreateDepartmentDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.895Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Program.cs",
-              "RelativeDocumentMoniker": "School System\\Program.cs",
-              "ToolTip": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\Program.cs",
-              "RelativeToolTip": "School System\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T11:33:36.935Z"
+              "WhenOpened": "2026-09-21T11:33:36.854Z",
+              "EditorCaption": ""
             }
           ]
         }

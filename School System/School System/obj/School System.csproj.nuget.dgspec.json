@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\School System.csproj": {}
+    "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\School System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\School System.csproj": {
+    "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\School System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\School System.csproj",
+        "projectUniqueName": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\School System.csproj",
         "projectName": "School System",
-        "projectPath": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\School System.csproj",
+        "projectPath": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\School System.csproj",
         "packagesPath": "C:\\Users\\basil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System-Web-API\\School System\\School System\\obj\\",
+        "outputPath": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,6 +52,10 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.1, )"

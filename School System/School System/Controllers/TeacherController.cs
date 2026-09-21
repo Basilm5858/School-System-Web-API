@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using School_System.DTOs.TeacherDTOs;
@@ -11,62 +12,47 @@ namespace School_System.Controllers
     public class TeacherController : ControllerBase
     {
         private readonly My_AppContext _context;
-        public TeacherController()
+        private readonly IMapper _mapper;
+        public TeacherController(IMapper mapper)
         {
             _context = new My_AppContext();
+            _mapper = mapper;
         }
         [HttpGet]
         public async Task<IActionResult> GetTeachers()
         {
             var teachers = await _context.Teachers
                 .Include(x => x.Department)
-                .Select(x => new TeacherDTO
-                {
-                    Id = x.Id,
-                    Email = x.Email,
-                    FullName = x.FirstName + " " + x.LastName,
-                    DepartmentName = x.Department.Name
+                .ToListAsync();
 
-                }).ToListAsync();
+            var res = _mapper.Map<List<TeacherDTO>>(teachers);
 
-            return Ok(teachers);
+            return Ok(res);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var teacher = await _context.Teachers
+            var teachers = await _context.Teachers
                 .Include(x => x.Department)
-                .Select(x => new TeacherDTO
-                {
-                    Email = x.Email,
-                    Id = x.Id,
-                    FullName = x.FirstName + " " + x.LastName,
-                    DepartmentName = x.Department.Name
-                }).FirstOrDefaultAsync(x => x.Id == id);
+                .FirstOrDefaultAsync(x => x.Id == id);
 
-            if (teacher == null)
+            if (teachers == null)
             {
                 return NotFound();
             }
 
-            return Ok(teacher);
+            var res = _mapper.Map<TeacherDTO>(teachers);
+
+            return Ok(res);
         }
         [HttpPost]
         public async Task<IActionResult> CreateTeacher(CreateTeacherDTO dto)
         {
-            var res = new Teacher
-            {
-                FirstName = dto.FirstName,
-                LastName = dto.LastName,
-                Email = dto.Email,
-                Salary = dto.Salary,
-                PhoneNumber = dto.PhoneNumber,
-                DepartmentId = dto.DepartmentId
-                
-            };
+            var res = _mapper.Map<Teacher>(dto);
 
             _context.Teachers.Add(res);
             await _context.SaveChangesAsync();
+
             return CreatedAtAction(nameof(GetById), new { id = res.Id }, res);
         }
 
@@ -79,15 +65,10 @@ namespace School_System.Controllers
                 return NotFound();
             }
 
-            teacher.FirstName = dto.FirstName;
-            teacher.LastName = dto.LastName;
-            teacher.Email = dto.Email;
-            teacher.DepartmentId = dto.DepartmentId;
-            teacher.Salary = dto.Salary;
-            teacher.PhoneNumber = dto.PhoneNumber;
-            
+           var res = _mapper.Map(dto, teacher);
+
             await _context.SaveChangesAsync();
-            return Ok(teacher);
+            return NoContent();
         }
 
         [HttpDelete]
@@ -98,6 +79,7 @@ namespace School_System.Controllers
             {
                 return NotFound();
             }
+
             _context.Teachers.Remove(teacher);
             await _context.SaveChangesAsync();
             return NoContent();

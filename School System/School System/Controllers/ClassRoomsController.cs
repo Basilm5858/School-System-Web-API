@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using School_System.DTOs.ClassRoomDTOs;
@@ -11,54 +12,42 @@ namespace School_System.Controllers
     public class ClassRoomsController : ControllerBase
     {
         private readonly My_AppContext _context;
-        public ClassRoomsController()
+        private readonly IMapper _mapper;
+        public ClassRoomsController(IMapper mapper)
         {
             _context = new My_AppContext();
+            _mapper = mapper;
         }
         [HttpGet]
         public async Task<IActionResult> GetClassRooms()
         {
             var classRooms = await _context.Classrooms
-                .Select(x => new ClassRoomsDTO
-                {
-                    Name = x.Name,
-                    Capacity = x.Capacity,
-                    GradeLevel = x.GradeLevel,
-                    Id = x.Id,
-                }).ToListAsync();
+                .ToListAsync();
 
-            return Ok(classRooms);
+            var res = _mapper.Map<List<ClassRoomsDTO>>(classRooms);
+            return Ok(res);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetClassRoomById(int id)
         {
             var classRoom = await _context.Classrooms
-                .Select(x => new ClassRoomsDTO
-                {
-                    Name = x.Name,
-                    Capacity = x.Capacity,
-                    GradeLevel = x.GradeLevel,
-                    Id = x.Id,
-                }).FirstOrDefaultAsync(x => x.Id == id);
+               .FirstOrDefaultAsync(x => x.Id == id);
 
             if (classRoom == null)
             {
                 return NotFound();
             }
 
-            return Ok(classRoom);
+            var res = _mapper.Map<ClassRoomsDTO>(classRoom);
+
+            return Ok(res);
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateClassRoom(CreateClassRoomsDTO dto)
         {
-            var res = new ClassRoom
-            {
-                Name = dto.Name,
-                Capacity = dto.Capacity,
-                GradeLevel = dto.GradeLevel
-            };
+            var res = _mapper.Map<ClassRoom>(dto);
 
             if(res == null)
             {
@@ -67,6 +56,7 @@ namespace School_System.Controllers
 
             await _context.Classrooms.AddAsync(res);
             await _context.SaveChangesAsync();
+
             return CreatedAtAction(nameof(GetClassRoomById), new { id = res.Id }, res);
         }
 
@@ -79,9 +69,8 @@ namespace School_System.Controllers
             {
                 return NotFound("ClassRoom Not Found");
             }
-            classRoom.Name = dto.Name;
-            classRoom.Capacity = dto.Capacity;
-            classRoom.GradeLevel = dto.GradeLevel;
+
+            var res = _mapper.Map(dto, classRoom);
 
             await _context.SaveChangesAsync();
 

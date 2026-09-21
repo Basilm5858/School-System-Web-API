@@ -116,11 +116,6 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
-      },
-      {
-        "Name": "department",
-        "Type": "School_System.Models.Department",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
