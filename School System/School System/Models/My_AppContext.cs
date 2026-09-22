@@ -47,7 +47,7 @@ namespace School_System.Models
                 .WithOne(x => x.ClassRoom)
                 .HasForeignKey(x => x.ClassRoomId);
 
-
+            // Define a unique index on the combination of StudentId and SubjectId in the Enrollment entity
             modelBuilder.Entity<Enrollment>().HasIndex(x => new { x.StudentId, x.SubjectId }).IsUnique();
 
             modelBuilder.Entity<Student>().Property(x => x.Email).IsRequired();

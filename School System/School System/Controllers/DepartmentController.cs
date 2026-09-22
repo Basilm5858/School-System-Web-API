@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using School_System.DTOs.DepartmentDTO.DepartmentDTOs;
 using School_System.DTOs.DepartmentDTOs;
+using School_System.DTOs.StudentDTOs;
 using School_System.Mapping;
 using School_System.Models;
 

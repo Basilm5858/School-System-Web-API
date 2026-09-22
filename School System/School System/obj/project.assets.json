@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net8.0": {
       "AutoMapper/16.2.0": {
@@ -4191,23 +4191,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\basil\\.nuget\\packages\\": {},
+    "C:\\Users\\basel.muhammed\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\School System.csproj",
+      "projectUniqueName": "C:\\Users\\basel.muhammed\\Desktop\\School-System-Web-API\\School System\\School System\\School System.csproj",
       "projectName": "School System",
-      "projectPath": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\School System.csproj",
-      "packagesPath": "C:\\Users\\basil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\basil\\OneDrive\\Desktop\\School-System\\School-System-Web-API\\School-System-Web-API\\School System\\School System\\obj\\",
+      "projectPath": "C:\\Users\\basel.muhammed\\Desktop\\School-System-Web-API\\School System\\School System\\School System.csproj",
+      "packagesPath": "C:\\Users\\basel.muhammed\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\basel.muhammed\\Desktop\\School-System-Web-API\\School System\\School System\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\basil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\basel.muhammed\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4220,7 +4220,6 @@
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -4235,11 +4234,10 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
-        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "AutoMapper": {
@@ -4276,24 +4274,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.31, 8.0.31]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.31, 8.0.31]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.31, 8.0.31]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.31, 8.0.31]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4302,7 +4282,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

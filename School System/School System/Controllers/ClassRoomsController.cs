@@ -25,6 +25,7 @@ namespace School_System.Controllers
                 .ToListAsync();
 
             var res = _mapper.Map<List<ClassRoomsDTO>>(classRooms);
+
             return Ok(res);
         }
 
