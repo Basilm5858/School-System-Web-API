@@ -65,14 +65,13 @@ namespace School_System.Controllers
 
             return CreatedAtAction(nameof(GetById), new { id = subject.Id }, subject);
         }
-        [HttpPut]
-        public async Task<IActionResult> UpdateSubject(UpdateSubjectDTO dto)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateSubject(int id, UpdateSubjectDTO dto)
         {
-            var subject = _mapper.Map<Subject>(dto);
-
+            var subject = await _context.Subjects.FindAsync(id);
             if (subject == null)
             {
-                return BadRequest("ClassRoom Cannot Be Null");
+                return NotFound("Subject Not Found");
             }
 
             _mapper.Map(dto, subject);

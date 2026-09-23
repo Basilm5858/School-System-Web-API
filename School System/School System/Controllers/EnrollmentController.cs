@@ -39,7 +39,7 @@ namespace School_System.Controllers
                 .Include(x => x.Student)
                 .Include(x => x.Subject)
                 .FirstOrDefaultAsync(x => x.Id == id);
-            var res = _mapper.Map<List<EnrollmentDTO>>(enrollments);
+            var res = _mapper.Map<EnrollmentDTO>(enrollments);
             return Ok(res);
         }
 

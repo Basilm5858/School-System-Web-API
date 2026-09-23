@@ -4,19 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>School System</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="app-shell">
+  <div class="app">
     <aside class="sidebar" id="sidebar">
       <div class="brand">
-        <div class="brand-mark">S</div>
+        <div class="brand-logo">SS</div>
         <div>
-          <strong>School System</strong>
-          <span>Administration</span>
+          <div class="brand-title">School System</div>
+          <div class="brand-subtitle">Administration Portal</div>
         </div>
       </div>
 
@@ -31,25 +28,25 @@
           <span class="nav-icon">▤</span><span>Classrooms</span>
         </button>
         <button class="nav-item" data-page="teachers">
-          <span class="nav-icon">♟</span><span>Teachers</span>
+          <span class="nav-icon">T</span><span>Teachers</span>
         </button>
         <button class="nav-item" data-page="students">
-          <span class="nav-icon">♙</span><span>Students</span>
+          <span class="nav-icon">S</span><span>Students</span>
         </button>
         <button class="nav-item" data-page="subjects">
-          <span class="nav-icon">◫</span><span>Subjects</span>
+          <span class="nav-icon">B</span><span>Subjects</span>
         </button>
         <button class="nav-item" data-page="enrollments">
-          <span class="nav-icon">✓</span><span>Enrollments</span>
+          <span class="nav-icon">E</span><span>Enrollments</span>
         </button>
       </nav>
 
-      <div class="sidebar-footer">
-        <div class="api-status">
-          <span class="status-dot" id="apiDot"></span>
+      <div class="sidebar-bottom">
+        <div class="api-card">
+          <span class="api-dot" id="apiDot"></span>
           <div>
-            <strong id="apiStatusText">Checking API...</strong>
-            <small id="apiBaseLabel"></small>
+            <strong id="apiStatus">Checking API...</strong>
+            <small id="apiUrlText"></small>
           </div>
         </div>
       </div>
@@ -58,15 +55,16 @@
     <main class="main">
       <header class="topbar">
         <div class="topbar-left">
-          <button class="icon-btn mobile-only" id="menuBtn" aria-label="Open menu">☰</button>
+          <button class="icon-button mobile-only" id="menuButton">☰</button>
           <div>
             <h1 id="pageTitle">Dashboard</h1>
-            <p id="pageSubtitle">Overview of your school</p>
+            <p id="pageSubtitle">School overview and quick actions</p>
           </div>
         </div>
+
         <div class="topbar-right">
-          <div class="date-pill" id="todayLabel"></div>
-          <button class="icon-btn" id="refreshBtn" title="Refresh current page">↻</button>
+          <div class="date-chip" id="dateChip"></div>
+          <button class="icon-button" id="refreshButton" title="Refresh">↻</button>
         </div>
       </header>
 
@@ -77,22 +75,36 @@
   </div>
 
   <div class="modal-backdrop hidden" id="modalBackdrop">
-    <div class="modal" role="dialog" aria-modal="true">
-      <div class="modal-head">
+    <div class="modal">
+      <div class="modal-header">
         <div>
-          <h2 id="modalTitle">Add item</h2>
-          <p id="modalHint"></p>
+          <h2 id="modalTitle"></h2>
+          <p id="modalSubtitle"></p>
         </div>
-        <button class="icon-btn" id="closeModalBtn" aria-label="Close">✕</button>
+        <button class="icon-button" id="modalCloseButton">✕</button>
       </div>
+
       <form id="entityForm">
         <div class="form-grid" id="formFields"></div>
-        <div class="modal-actions">
-          <button type="button" class="btn secondary" id="cancelModalBtn">Cancel</button>
-          <button type="submit" class="btn primary" id="saveEntityBtn">Save</button>
+        <div class="modal-footer">
+          <button class="btn secondary" type="button" id="modalCancelButton">Cancel</button>
+          <button class="btn primary" type="submit" id="modalSaveButton">Save</button>
         </div>
       </form>
     </div>
+  </div>
+
+  <div class="drawer-backdrop hidden" id="drawerBackdrop">
+    <aside class="drawer">
+      <div class="drawer-header">
+        <div>
+          <h2 id="drawerTitle">Details</h2>
+          <p id="drawerSubtitle"></p>
+        </div>
+        <button class="icon-button" id="drawerCloseButton">✕</button>
+      </div>
+      <div class="drawer-body" id="drawerBody"></div>
+    </aside>
   </div>
 
   <div class="toast-container" id="toastContainer"></div>

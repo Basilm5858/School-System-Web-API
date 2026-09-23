@@ -418,22 +418,6 @@
   },
   {
     "ContainingType": "School_System.Controllers.StudentController",
-    "Method": "UpdateStudent",
-    "RelativePath": "api/Student",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "School_System.DTOs.StudentDTOs.UpdateStudentDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "School_System.Controllers.StudentController",
     "Method": "DeleteStudent",
     "RelativePath": "api/Student",
     "HttpMethod": "DELETE",
@@ -459,6 +443,27 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.StudentController",
+    "Method": "UpdateStudent",
+    "RelativePath": "api/Student/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "School_System.DTOs.StudentDTOs.UpdateStudentDTO",
         "IsRequired": true
       }
     ],
@@ -492,22 +497,6 @@
   },
   {
     "ContainingType": "School_System.Controllers.SubjectController",
-    "Method": "UpdateSubject",
-    "RelativePath": "api/Subject",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "School_System.DTOs.SubjectDTOs.UpdateSubjectDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "School_System.Controllers.SubjectController",
     "Method": "DeleteSubject",
     "RelativePath": "api/Subject",
     "HttpMethod": "DELETE",
@@ -533,6 +522,27 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.SubjectController",
+    "Method": "UpdateSubject",
+    "RelativePath": "api/Subject/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "School_System.DTOs.SubjectDTOs.UpdateSubjectDTO",
         "IsRequired": true
       }
     ],

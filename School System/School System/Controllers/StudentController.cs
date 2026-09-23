@@ -65,14 +65,14 @@ namespace School_System.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetById), new { id = student.Id }, student);
         }
-        [HttpPut]
-        public async Task<IActionResult> UpdateStudent(UpdateStudentDTO dto)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateStudent(int id, UpdateStudentDTO dto)
         {
-            var student = _mapper.Map<Student>(dto);
+            var student = await _context.Students.FindAsync(id);
 
             if (student == null)
             {
-                return BadRequest("ClassRoom Cannot Be Null");
+                return NotFound("Student Not Found");
             }
 
             _mapper.Map(dto, student);
