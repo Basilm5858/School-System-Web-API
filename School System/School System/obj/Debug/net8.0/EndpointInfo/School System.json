@@ -5,6 +5,180 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/AllLinqs/SearchByClassRoomIdUsingWhere": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/SearchByClassRoomIdUsingFirstAsync": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/SearchByClassRoomIdUsingFirstOrDefaultAsync": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/SearchByStudentEmailUsingSingleAsync": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/SearchByStudentEmailUsingSingleOrDefaultAsync": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/GetLastEnrollmentUsingLastAsync": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/GetLastEnrollmentUsingLastOrDefaultAsync": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/GetStudentByIndexUsingElementAtAsync": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "parameters": [
+          {
+            "name": "index",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/SortByLastName": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/GetAvgGrade": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/GroupBy": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/AllLinqs/SortByGrade": {
+      "get": {
+        "tags": [
+          "AllLinqs"
+        ],
+        "parameters": [
+          {
+            "name": "classid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/ClassRooms": {
       "get": {
         "tags": [
@@ -384,28 +558,6 @@
             "name": "id",
             "in": "path",
             "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Student/Linq": {
-      "get": {
-        "tags": [
-          "Student"
-        ],
-        "parameters": [
-          {
-            "name": "index",
-            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"

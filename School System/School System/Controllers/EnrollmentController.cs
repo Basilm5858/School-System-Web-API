@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Diagnostics;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -19,32 +20,6 @@ namespace School_System.Controllers
             _context = new My_AppContext();
             _mapper = mapper;
         }
-
-        // (6)
-
-        //[HttpGet("Linq")]
-        //public async Task<IActionResult> Filters()
-        //{
-        //    var filter = await _context.Enrollments
-        //        .LastAsync(x => x.StudentId == 10);
-
-        //    var res = _mapper.Map<EnrollmentDTO>(filter);
-
-        //    return Ok(res);
-        //}
-
-        // (7)
-
-        //[HttpGet("Linq")]
-        //public async Task<IActionResult> Filters()
-        //{
-        //    var filter = await _context.Enrollments
-        //        .LastOrDefaultAsync(x => x.StudentId == 10);
-
-        //    var res = _mapper.Map<EnrollmentDTO>(filter);
-
-        //    return Ok(res);
-        //}
 
         [HttpGet]
         public async Task<IActionResult> GetEnrollments()
@@ -111,5 +86,6 @@ namespace School_System.Controllers
             return NoContent();
 
         }
+
     }
 }

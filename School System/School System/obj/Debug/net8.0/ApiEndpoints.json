@@ -1,5 +1,143 @@
 [
   {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "GetAVG",
+    "RelativePath": "api/AllLinqs/GetAvgGrade",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "Linq6",
+    "RelativePath": "api/AllLinqs/GetLastEnrollmentUsingLastAsync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "Linq7",
+    "RelativePath": "api/AllLinqs/GetLastEnrollmentUsingLastOrDefaultAsync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "Linq8",
+    "RelativePath": "api/AllLinqs/GetStudentByIndexUsingElementAtAsync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "index",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "GroupByClassroom",
+    "RelativePath": "api/AllLinqs/GroupBy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "Linq2",
+    "RelativePath": "api/AllLinqs/SearchByClassRoomIdUsingFirstAsync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "Linq3",
+    "RelativePath": "api/AllLinqs/SearchByClassRoomIdUsingFirstOrDefaultAsync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "Linq1",
+    "RelativePath": "api/AllLinqs/SearchByClassRoomIdUsingWhere",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "Linq4",
+    "RelativePath": "api/AllLinqs/SearchByStudentEmailUsingSingleAsync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "Filters",
+    "RelativePath": "api/AllLinqs/SearchByStudentEmailUsingSingleOrDefaultAsync",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "SortByLastName",
+    "RelativePath": "api/AllLinqs/SortByGrade",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "classid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.AllLinqsController",
+    "Method": "Linq15",
+    "RelativePath": "api/AllLinqs/SortByLastName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "School_System.Controllers.ClassRoomsController",
     "Method": "GetClassRooms",
     "RelativePath": "api/ClassRooms",
@@ -322,22 +460,6 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "School_System.Controllers.StudentController",
-    "Method": "Filters",
-    "RelativePath": "api/Student/Linq",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "index",
-        "Type": "System.Int32",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []

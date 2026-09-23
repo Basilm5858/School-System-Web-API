@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <div>
+          <strong>School System</strong>
+          <span>Administration</span>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <button class="nav-item active" data-page="dashboard">
+          <span class="nav-icon">⌂</span><span>Dashboard</span>
+        </button>
+        <button class="nav-item" data-page="departments">
+          <span class="nav-icon">▦</span><span>Departments</span>
+        </button>
+        <button class="nav-item" data-page="classrooms">
+          <span class="nav-icon">▤</span><span>Classrooms</span>
+        </button>
+        <button class="nav-item" data-page="teachers">
+          <span class="nav-icon">♟</span><span>Teachers</span>
+        </button>
+        <button class="nav-item" data-page="students">
+          <span class="nav-icon">♙</span><span>Students</span>
+        </button>
+        <button class="nav-item" data-page="subjects">
+          <span class="nav-icon">◫</span><span>Subjects</span>
+        </button>
+        <button class="nav-item" data-page="enrollments">
+          <span class="nav-icon">✓</span><span>Enrollments</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="api-status">
+          <span class="status-dot" id="apiDot"></span>
+          <div>
+            <strong id="apiStatusText">Checking API...</strong>
+            <small id="apiBaseLabel"></small>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-btn mobile-only" id="menuBtn" aria-label="Open menu">☰</button>
+          <div>
+            <h1 id="pageTitle">Dashboard</h1>
+            <p id="pageSubtitle">Overview of your school</p>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <div class="date-pill" id="todayLabel"></div>
+          <button class="icon-btn" id="refreshBtn" title="Refresh current page">↻</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <div id="pageRoot"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div>
+          <h2 id="modalTitle">Add item</h2>
+          <p id="modalHint"></p>
+        </div>
+        <button class="icon-btn" id="closeModalBtn" aria-label="Close">✕</button>
+      </div>
+      <form id="entityForm">
+        <div class="form-grid" id="formFields"></div>
+        <div class="modal-actions">
+          <button type="button" class="btn secondary" id="cancelModalBtn">Cancel</button>
+          <button type="submit" class="btn primary" id="saveEntityBtn">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

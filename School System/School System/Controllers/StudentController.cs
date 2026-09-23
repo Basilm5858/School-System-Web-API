@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using School_System.DTOs.StudentDTOs;
@@ -19,88 +20,6 @@ namespace School_System.Controllers
             _context = new My_AppContext();
             _mapper = mapper;
         }
-        // (1)
-
-        //[HttpGet("SearchByClassRoomId")]
-        //public async Task<IActionResult> FilterByClassRoomId()
-        //{
-        //    var filter = _context.Students
-        //        .Include(x => x.ClassRoom)
-        //        .Where(x => x.ClassRoom.Id == 2);
-
-        //    var res = _mapper.Map<List<StudentDTO>>(filter);
-
-        //    return Ok(res);
-
-        //}
-
-        // (2)
-
-        //[HttpGet("Linq")]
-        //public async Task<IActionResult> Filters()
-        //{
-        //    var filter = await _context.Students
-        //        .Include(x => x.ClassRoom)
-        //        .FirstAsync(x => x.ClassRoom.Id == 2);
-
-        //    var res = _mapper.Map<StudentDTO>(filter);
-
-        //    return Ok(res);
-        //}
-
-        // (3)
-
-        //[HttpGet("Linq")]
-        //public async Task<IActionResult> Filters()
-        //{
-        //    var filter = await _context.Students
-        //        .Include(x => x.ClassRoom)
-        //        .FirstOrDefaultAsync(x => x.ClassRoom.Id == 99);
-
-        //    var res = _mapper.Map<StudentDTO>(filter);
-
-        //    return Ok(res);
-        //}
-
-        // (4)
-
-        //[HttpGet("Linq")]
-        //public async Task<IActionResult> Filters()
-        //{
-        //    var filter = await _context.Students
-        //        .SingleAsync(x => x.Email == "basil@gmail.com");
-
-        //    var res = _mapper.Map<StudentDTO>(filter);
-
-        //    return Ok(res);
-        //}
-
-        // (5)
-
-        //[HttpGet("Linq")]
-        //public async Task<IActionResult> Filters()
-        //{
-        //    var filter = await _context.Students
-        //        .SingleOrDefaultAsync(x => x.Email == "basil@gmail.com");
-
-        //    var res = _mapper.Map<StudentDTO>(filter);
-
-        //    return Ok(res);
-        //}
-
-        // (8)
-
-        //[HttpGet("Linq")]
-        //public async Task<IActionResult> Filters(int index)
-        //{
-        //    var filter = await _context.Students
-        //        .ElementAtAsync(index);
-
-        //    var res = _mapper.Map<StudentDTO>(filter);
-
-        //    return Ok(res);
-        //}
-
 
         [HttpGet]
         public async Task<IActionResult> GetStudents()
