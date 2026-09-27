@@ -9,12 +9,12 @@ namespace School_System.Models
     public class Student
     {
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
         [EmailAddress]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
         [MaxLength(20)]
-        public string PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; } = string.Empty;
         [Required]
         public DateOnly DateOfBirth { get; set; }
         public ClassRoom ClassRoom { get; set; }

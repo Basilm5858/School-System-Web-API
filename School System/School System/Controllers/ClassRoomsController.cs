@@ -2,8 +2,9 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using School_System.DTOs.ClassRoomDTOs;
+using School_System.DTOs;
 using School_System.Models;
+using School_System.Repo.Interfaces;
 
 namespace School_System.Controllers
 {
@@ -11,18 +12,24 @@ namespace School_System.Controllers
     [ApiController]
     public class ClassRoomsController : ControllerBase
     {
-        private readonly My_AppContext _context;
+        private readonly IClassRoomRepo _repo;
         private readonly IMapper _mapper;
-        public ClassRoomsController(IMapper mapper)
+        public ClassRoomsController(IMapper mapper, IClassRoomRepo repo)
         {
-            _context = new My_AppContext();
+            _repo = repo;
             _mapper = mapper;
         }
+
         [HttpGet]
         public async Task<IActionResult> GetClassRooms()
         {
-            var classRooms = await _context.Classrooms
-                .ToListAsync();
+            var classRooms = await _repo.GetAll();
+
+            if(classRooms == null)
+            {
+                return NotFound();
+            }
+
 
             var res = _mapper.Map<List<ClassRoomsDTO>>(classRooms);
 
@@ -32,8 +39,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetClassRoomById(int id)
         {
-            var classRoom = await _context.Classrooms
-               .FirstOrDefaultAsync(x => x.Id == id);
+            var classRoom = await _repo.GetById(id);
 
             if (classRoom == null)
             {
@@ -55,8 +61,8 @@ namespace School_System.Controllers
                 return BadRequest("ClassRoom Cannot Be Null");
             }
 
-            await _context.Classrooms.AddAsync(res);
-            await _context.SaveChangesAsync();
+            await _repo.Add(res);
+            await _repo.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetClassRoomById), new { id = res.Id }, res);
         }
@@ -64,7 +70,7 @@ namespace School_System.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateClassRoom(int id, UpdateClassRoomsDTO dto)
         {
-            var classRoom = await _context.Classrooms.FindAsync(id);
+            var classRoom = await _repo.GetById(id);
 
             if (classRoom == null)
             {
@@ -73,7 +79,7 @@ namespace School_System.Controllers
 
             var res = _mapper.Map(dto, classRoom);
 
-            await _context.SaveChangesAsync();
+            await _repo.SaveChangesAsync();
 
             return NoContent();
         }
@@ -81,15 +87,15 @@ namespace School_System.Controllers
         [HttpDelete]
         public async Task<IActionResult> DeleteClassRoom(int id)
         {
-            var classRoom = await _context.Classrooms.FindAsync(id);
+            var classRoom = await _repo.GetById(id);
 
             if (classRoom == null)
             {
                 return NotFound("ClassRoom Not Found");
             }
 
-            _context.Classrooms.Remove(classRoom);
-            await _context.SaveChangesAsync();
+            _repo.Delete(classRoom);
+            await _repo.SaveChangesAsync();
             return NoContent();
         }
     }

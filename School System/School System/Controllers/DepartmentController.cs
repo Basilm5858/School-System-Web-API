@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using School_System.DTOs.DepartmentDTO.DepartmentDTOs;
-using School_System.DTOs.DepartmentDTOs;
-using School_System.DTOs.StudentDTOs;
+using School_System.DTOs;
 using School_System.Mapping;
 using School_System.Models;
+using School_System.Repo.Implementations;
+using School_System.Repo.Interfaces;
 
 namespace School_System.Controllers
 {
@@ -14,18 +14,18 @@ namespace School_System.Controllers
     [ApiController]
     public class DepartmentController : ControllerBase
     {
-        private readonly My_AppContext _context;
+        private readonly IDepartmentRepo _repo;
         private readonly IMapper _mapper;
-        public DepartmentController(IMapper mapper)
+        public DepartmentController(IMapper mapper, IDepartmentRepo repo)
         {
-            _context = new My_AppContext();
+            _repo = repo;
             _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetDepartments()
         {
-            var departments = await _context.Departments.ToListAsync();
+            var departments = await _repo.GetAll();
 
             var result = _mapper.Map<List<DepartmentDTO>>(departments);
 
@@ -35,11 +35,7 @@ namespace School_System.Controllers
         [HttpGet("Search")]
         public async Task<IActionResult> SearchByTeacherName(string fullName)
         {
-            var department = await _context.Departments
-                .Include(d => d.Teachers)
-                .FirstOrDefaultAsync(d =>
-                    d.Teachers.Any(t =>
-                        (t.FirstName + " " + t.LastName).Contains(fullName)));
+            var department = await _repo.SearchByTeacherName(fullName);
 
             if (department == null)
             {
@@ -55,19 +51,15 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var res = await _context.Departments
-                .Select(d => new DepartmentDTO
-                {
-                    Id = d.Id,
-                    Name = d.Name,
-                    Description = d.Description
-                })
-                .FirstOrDefaultAsync(x => x.Id == id);
+            var department = await _repo.GetById(id);
 
-            if (res == null)
+
+            if (department == null)
             {
                 return NotFound("Department Not Found");
             }
+
+            var res = _mapper.Map<DepartmentDTO>(department);
 
             return Ok(res);
         }
@@ -77,8 +69,8 @@ namespace School_System.Controllers
         {
             var department = _mapper.Map<Department>(dto);
 
-            await _context.Departments.AddAsync(department);
-            await _context.SaveChangesAsync();
+            await _repo.AddAsync(department);
+            await _repo.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = department.Id }, department);
         }
@@ -86,7 +78,7 @@ namespace School_System.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateDepartment(int id, UpdateDepartmentDTO dto)
         {
-            var department = await _context.Departments.FindAsync(id);
+            var department = await _repo.GetById(id);
 
             if (department == null)
             {
@@ -95,26 +87,23 @@ namespace School_System.Controllers
 
             _mapper.Map(dto, department);
 
-            await _context.SaveChangesAsync();
+            await _repo.SaveChangesAsync();
 
             return NoContent();
         }
-
         
-
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
-            var res = await _context.Departments
-                .FirstOrDefaultAsync(x => x.Id == id);
+            var res = await _repo.GetById(id);
 
             if (res == null)
             {
                 return BadRequest("Department Not Found");
             }
 
-            _context.Departments.Remove(res);
-            await _context.SaveChangesAsync();
+            _repo.Delete(res);
+            await _repo.SaveChangesAsync();
             return NoContent();
         }
     }

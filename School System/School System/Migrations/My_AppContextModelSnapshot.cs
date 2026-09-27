@@ -42,7 +42,7 @@ namespace School_System.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Classrooms");
+                    b.ToTable("Classrooms", (string)null);
 
                     b.HasData(
                         new
@@ -88,7 +88,7 @@ namespace School_System.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Departments");
+                    b.ToTable("Departments", (string)null);
 
                     b.HasData(
                         new
@@ -138,7 +138,7 @@ namespace School_System.Migrations
                     b.HasIndex("StudentId", "SubjectId")
                         .IsUnique();
 
-                    b.ToTable("Enrollments");
+                    b.ToTable("Enrollments", (string)null);
 
                     b.HasData(
                         new
@@ -206,7 +206,7 @@ namespace School_System.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
 
                     b.HasData(
                         new
@@ -274,7 +274,7 @@ namespace School_System.Migrations
 
                     b.HasIndex("TeacherId");
 
-                    b.ToTable("Subjects");
+                    b.ToTable("Subjects", (string)null);
 
                     b.HasData(
                         new
@@ -341,7 +341,7 @@ namespace School_System.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
-                    b.ToTable("Teachers");
+                    b.ToTable("Teachers", (string)null);
 
                     b.HasData(
                         new

@@ -157,7 +157,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.ClassRoomDTOs.CreateClassRoomsDTO",
+        "Type": "School_System.DTOs.CreateClassRoomsDTO",
         "IsRequired": true
       }
     ],
@@ -210,7 +210,7 @@
       },
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.ClassRoomDTOs.UpdateClassRoomsDTO",
+        "Type": "School_System.DTOs.UpdateClassRoomsDTO",
         "IsRequired": true
       }
     ],
@@ -236,7 +236,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.DepartmentDTO.DepartmentDTOs.CreateDepartmentDTO",
+        "Type": "School_System.DTOs.CreateDepartmentDTO",
         "IsRequired": true
       }
     ],
@@ -289,7 +289,7 @@
       },
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.DepartmentDTOs.UpdateDepartmentDTO",
+        "Type": "School_System.DTOs.UpdateDepartmentDTO",
         "IsRequired": true
       }
     ],
@@ -331,7 +331,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.EnrollmentDTOs.CreateEnrollmentDTO",
+        "Type": "School_System.DTOs.CreateEnrollmentDTO",
         "IsRequired": true
       }
     ],
@@ -352,7 +352,7 @@
       },
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.EnrollmentDTOs.UpdateEnrollmentDTO",
+        "Type": "School_System.DTOs.UpdateEnrollmentDTO",
         "IsRequired": true
       }
     ],
@@ -410,7 +410,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.StudentDTOs.CreateStudentDTO",
+        "Type": "School_System.DTOs.CreateStudentDTO",
         "IsRequired": true
       }
     ],
@@ -463,7 +463,7 @@
       },
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.StudentDTOs.UpdateStudentDTO",
+        "Type": "School_System.DTOs.UpdateStudentDTO",
         "IsRequired": true
       }
     ],
@@ -489,7 +489,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.SubjectDTOs.CreateSubjectDTO",
+        "Type": "School_System.DTOs.CreateSubjectDTO",
         "IsRequired": true
       }
     ],
@@ -542,7 +542,7 @@
       },
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.SubjectDTOs.UpdateSubjectDTO",
+        "Type": "School_System.DTOs.UpdateSubjectDTO",
         "IsRequired": true
       }
     ],
@@ -568,7 +568,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.TeacherDTOs.CreateTeacherDTO",
+        "Type": "School_System.DTOs.CreateTeacherDTO",
         "IsRequired": true
       }
     ],
@@ -589,7 +589,7 @@
       },
       {
         "Name": "dto",
-        "Type": "School_System.DTOs.TeacherDTOs.UpdateTeacherDTO",
+        "Type": "School_System.DTOs.UpdateTeacherDTO",
         "IsRequired": true
       }
     ],

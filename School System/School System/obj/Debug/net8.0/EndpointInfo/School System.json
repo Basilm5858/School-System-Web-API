@@ -946,17 +946,26 @@
   "components": {
     "schemas": {
       "CreateClassRoomsDTO": {
+        "required": [
+          "capacity",
+          "gradeLevel",
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "capacity": {
+            "maximum": 100,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
           "gradeLevel": {
+            "maximum": 12,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           }
@@ -971,6 +980,7 @@
             "nullable": true
           },
           "description": {
+            "maxLength": 500,
             "type": "string",
             "nullable": true
           }
@@ -989,6 +999,8 @@
             "format": "int32"
           },
           "grade": {
+            "maximum": 100,
+            "minimum": 0,
             "type": "number",
             "format": "double"
           }
@@ -996,6 +1008,9 @@
         "additionalProperties": false
       },
       "CreateStudentDTO": {
+        "required": [
+          "dateOfBirth"
+        ],
         "type": "object",
         "properties": {
           "firstName": {
@@ -1007,12 +1022,18 @@
             "nullable": true
           },
           "phoneNumber": {
+            "maxLength": 20,
             "type": "string",
             "nullable": true
           },
           "email": {
             "type": "string",
+            "format": "email",
             "nullable": true
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date"
           },
           "classRoomId": {
             "type": "integer",
@@ -1022,19 +1043,27 @@
         "additionalProperties": false
       },
       "CreateSubjectDTO": {
+        "required": [
+          "maxGrade",
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 500,
             "type": "string",
             "nullable": true
           },
           "maxGrade": {
+            "maximum": 100,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
           },
           "teacherId": {
             "type": "integer",
@@ -1044,9 +1073,18 @@
         "additionalProperties": false
       },
       "CreateTeacherDTO": {
+        "required": [
+          "salary"
+        ],
         "type": "object",
         "properties": {
           "email": {
+            "type": "string",
+            "format": "email",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "maxLength": 20,
             "type": "string",
             "nullable": true
           },
@@ -1059,12 +1097,10 @@
             "nullable": true
           },
           "salary": {
+            "maximum": 2147483647,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
-          },
-          "phoneNumber": {
-            "type": "string",
-            "nullable": true
           },
           "departmentId": {
             "type": "integer",
@@ -1074,17 +1110,26 @@
         "additionalProperties": false
       },
       "UpdateClassRoomsDTO": {
+        "required": [
+          "capacity",
+          "gradeLevel",
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "capacity": {
+            "maximum": 100,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
           "gradeLevel": {
+            "maximum": 12,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           }
@@ -1092,13 +1137,18 @@
         "additionalProperties": false
       },
       "UpdateDepartmentDTO": {
+        "required": [
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
           },
           "description": {
+            "maxLength": 500,
             "type": "string",
             "nullable": true
           }
@@ -1117,6 +1167,8 @@
             "format": "int32"
           },
           "grade": {
+            "maximum": 100,
+            "minimum": 0,
             "type": "number",
             "format": "double"
           }
@@ -1124,6 +1176,9 @@
         "additionalProperties": false
       },
       "UpdateStudentDTO": {
+        "required": [
+          "dateOfBirth"
+        ],
         "type": "object",
         "properties": {
           "firstName": {
@@ -1135,12 +1190,18 @@
             "nullable": true
           },
           "phoneNumber": {
+            "maxLength": 20,
             "type": "string",
             "nullable": true
           },
           "email": {
             "type": "string",
+            "format": "email",
             "nullable": true
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date"
           },
           "classRoomId": {
             "type": "integer",
@@ -1150,19 +1211,27 @@
         "additionalProperties": false
       },
       "UpdateSubjectDTO": {
+        "required": [
+          "maxGrade",
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 500,
             "type": "string",
             "nullable": true
           },
           "maxGrade": {
+            "maximum": 100,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
           },
           "teacherId": {
             "type": "integer",
@@ -1172,9 +1241,18 @@
         "additionalProperties": false
       },
       "UpdateTeacherDTO": {
+        "required": [
+          "salary"
+        ],
         "type": "object",
         "properties": {
           "email": {
+            "type": "string",
+            "format": "email",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "maxLength": 20,
             "type": "string",
             "nullable": true
           },
@@ -1187,12 +1265,10 @@
             "nullable": true
           },
           "salary": {
+            "maximum": 2147483647,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
-          },
-          "phoneNumber": {
-            "type": "string",
-            "nullable": true
           },
           "departmentId": {
             "type": "integer",

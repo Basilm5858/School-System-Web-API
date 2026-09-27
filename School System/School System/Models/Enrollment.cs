@@ -5,6 +5,7 @@ namespace School_System.Models
 {
     public class Enrollment
     {
+        [Key]
         public int Id { get; set; }
         public Student Student { get; set; }
         public Subject Subject { get; set; }
@@ -18,9 +19,3 @@ namespace School_System.Models
 
     }
 }
-
-//Id int Primary key
-//StudentId int Required foreign key
-//SubjectId int Required foreign key
-//EnrollmentDate DateTime Required
-//Grade decimal Value between 0 and 100

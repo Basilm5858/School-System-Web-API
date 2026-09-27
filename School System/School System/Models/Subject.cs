@@ -8,9 +8,9 @@ namespace School_System.Models
         [Key]
         public int Id { get; set; }
         [Required, MaxLength(100)]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         [MaxLength(500)]
-        public string Description { get; set; }
+        public string Description { get; set; } = string.Empty;
         [Required, Range(1,100)]
         public int MaxGrade { get; set; }
         [ForeignKey(nameof(Teacher))]
@@ -20,8 +20,3 @@ namespace School_System.Models
 
     }
 }
-
-//Id int Primary key
-//Name string Required, maximum length 100
-//Description string Optional (nullable), maximum length 500
-//MaxGrade int Required, value between 1 and 100

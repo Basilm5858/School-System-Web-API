@@ -1,11 +1,5 @@
 ﻿using AutoMapper;
-using School_System.DTOs.ClassRoomDTOs;
-using School_System.DTOs.DepartmentDTO.DepartmentDTOs;
-using School_System.DTOs.DepartmentDTOs;
-using School_System.DTOs.EnrollmentDTOs;
-using School_System.DTOs.StudentDTOs;
-using School_System.DTOs.SubjectDTOs;
-using School_System.DTOs.TeacherDTOs;
+using School_System.DTOs;
 using School_System.Models;
 
 namespace School_System.Mapping

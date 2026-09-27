@@ -3,8 +3,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using School_System.DTOs.EnrollmentDTOs;
-using School_System.DTOs.StudentDTOs;
+using School_System.DTOs;
 using School_System.Models;
 
 namespace School_System.Controllers
@@ -15,9 +14,9 @@ namespace School_System.Controllers
     {
         private readonly My_AppContext _context;
         private readonly IMapper _mapper;
-        public EnrollmentController(IMapper mapper)
+        public EnrollmentController(IMapper mapper, My_AppContext context)
         {
-            _context = new My_AppContext();
+            _context = context;
             _mapper = mapper;
         }
 

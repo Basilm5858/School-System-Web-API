@@ -5,16 +5,16 @@ namespace School_System.Models
 {
     public class My_AppContext : DbContext
     {
+        public My_AppContext(DbContextOptions options) : base(options)
+        {
+        }
+
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<ClassRoom> Classrooms { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SchoolDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
-        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Teacher>()
@@ -25,22 +25,28 @@ namespace School_System.Models
             modelBuilder.Entity<Student>()
                 .HasOne(x => x.ClassRoom)
                 .WithMany(x => x.Students)
-                .HasForeignKey(x => x.ClassRoomId);
+                .HasForeignKey(x => x.ClassRoomId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Enrollment>()
                 .HasOne(x => x.Student)
                 .WithMany(x => x.Enrollments)
-                .HasForeignKey(x => x.StudentId);
+                .HasForeignKey(x => x.StudentId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Enrollment>()
                 .HasOne(x => x.Subject)
                 .WithMany(x => x.Enrollments)
-                .HasForeignKey(x => x.SubjectId);
+                .HasForeignKey(x => x.SubjectId)
+                .OnDelete(DeleteBehavior.Cascade);
+
 
             modelBuilder.Entity<Subject>()
                 .HasOne(x => x.Teacher)
                 .WithMany(x => x.Subjects)
-                .HasForeignKey(x => x.TeacherId);
+                .HasForeignKey(x => x.TeacherId)
+                .OnDelete(DeleteBehavior.Cascade);
+
 
             modelBuilder.Entity<ClassRoom>()
                 .HasMany(x => x.Students)
