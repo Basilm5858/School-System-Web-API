@@ -3,10 +3,10 @@ using School_System.Models;
 
 namespace School_System.Repo.Implementations
 {
-    public class EnrollmentCustomerRepo : GenericRepo<Enrollment>
+    public class EnrollmentCustomRepo : GenericRepo<Enrollment>
     {
         private readonly My_AppContext _context;
-        public EnrollmentCustomerRepo(My_AppContext context) : base(context)
+        public EnrollmentCustomRepo(My_AppContext context) : base(context)
         {
             _context = context;
         }

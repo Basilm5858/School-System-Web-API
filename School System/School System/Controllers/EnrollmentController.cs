@@ -15,9 +15,9 @@ namespace School_System.Controllers
     public class EnrollmentController : ControllerBase
     {
         private readonly IGenericRepo<Enrollment> _repo;
-        private readonly EnrollmentCustomerRepo _customrepo;
+        private readonly EnrollmentCustomRepo _customrepo;
         private readonly IMapper _mapper;
-        public EnrollmentController(IMapper mapper, IGenericRepo<Enrollment> repo, EnrollmentCustomerRepo customerRepo)
+        public EnrollmentController(IMapper mapper, IGenericRepo<Enrollment> repo, EnrollmentCustomRepo customerRepo)
         {
             _repo = repo;
             _mapper = mapper;

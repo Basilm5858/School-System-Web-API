@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using School_System.DTOs;
 using School_System.Models;
+using School_System.Repo.Implementations;
 using School_System.Repo.Interfaces;
 
 namespace School_System.Controllers
@@ -13,16 +14,18 @@ namespace School_System.Controllers
     public class TeacherController : ControllerBase
     {
         private readonly IGenericRepo<Teacher> _repo;
+        private readonly TeacherCustomRepo _customRepo;
         private readonly IMapper _mapper;
-        public TeacherController(IMapper mapper, IGenericRepo<Teacher> repo)
+        public TeacherController(IMapper mapper, IGenericRepo<Teacher> repo, TeacherCustomRepo customRepo)
         {
             _repo = repo;
             _mapper = mapper;
+            _customRepo = customRepo;
         }
         [HttpGet]
         public async Task<IActionResult> GetTeachers()
         {
-            var teachers = await _repo.GetAll();
+            var teachers = await _customRepo.GetTeachersWithDepartment();
 
             var res = _mapper.Map<List<TeacherDTO>>(teachers);
 

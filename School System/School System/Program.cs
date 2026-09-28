@@ -19,8 +19,11 @@ builder.Services.AddScoped<IGenericRepo<ClassRoom>, GenericRepo<ClassRoom>>();
 builder.Services.AddScoped<IGenericRepo<Student>, GenericRepo<Student>>();
 builder.Services.AddScoped<IGenericRepo<Enrollment>, GenericRepo<Enrollment>>();
 builder.Services.AddScoped<IGenericRepo<Teacher>, GenericRepo<Teacher>>();
+builder.Services.AddScoped<IGenericRepo<Subject>, GenericRepo<Subject>>();
+builder.Services.AddScoped<SubjectCustomRepo>();
+builder.Services.AddScoped<TeacherCustomRepo>();
 builder.Services.AddScoped<DepartmentRepo>();
-builder.Services.AddScoped<EnrollmentCustomerRepo>();
+builder.Services.AddScoped<EnrollmentCustomRepo>();
 builder.Services.AddScoped<StuedentCustomRepo>();
 
 builder.Services.AddDbContext<My_AppContext>(options => 
