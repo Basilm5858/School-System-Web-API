@@ -14,8 +14,14 @@ builder.Services.AddAutoMapper(cfg =>
     cfg.AddProfile<MappingProfile>();
 });
 
-builder.Services.AddScoped<IDepartmentRepo, DepartmentRepo>();
-builder.Services.AddScoped<IClassRoomRepo, ClassRoomRepo>();
+builder.Services.AddScoped<IGenericRepo<Department>, GenericRepo<Department>>();
+builder.Services.AddScoped<IGenericRepo<ClassRoom>, GenericRepo<ClassRoom>>();
+builder.Services.AddScoped<IGenericRepo<Student>, GenericRepo<Student>>();
+builder.Services.AddScoped<IGenericRepo<Enrollment>, GenericRepo<Enrollment>>();
+builder.Services.AddScoped<IGenericRepo<Teacher>, GenericRepo<Teacher>>();
+builder.Services.AddScoped<DepartmentRepo>();
+builder.Services.AddScoped<EnrollmentCustomerRepo>();
+builder.Services.AddScoped<StuedentCustomRepo>();
 
 builder.Services.AddDbContext<My_AppContext>(options => 
     options.UseSqlServer(

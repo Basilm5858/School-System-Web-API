@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using School_System.DTOs;
 using School_System.Models;
+using School_System.Repo.Implementations;
+using School_System.Repo.Interfaces;
 
 namespace School_System.Controllers
 {
@@ -12,21 +14,21 @@ namespace School_System.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private readonly My_AppContext _context;
+        private readonly IGenericRepo<Student> _repo;
+        private readonly StuedentCustomRepo _customRepo;
         private readonly IMapper _mapper;
 
-        public StudentController(IMapper mapper, My_AppContext context)
+        public StudentController(IMapper mapper,IGenericRepo<Student> genericRepo,StuedentCustomRepo customRepo)
         {
-            _context = context;
             _mapper = mapper;
+            _customRepo = customRepo;
+            _repo = genericRepo;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetStudents()
         {
-            var stud = await _context.Students
-                .Include(x => x.ClassRoom)
-                .ToListAsync();
+            var stud = await _customRepo.IncludeClassRoom();
 
             var res = _mapper.Map<List<StudentDTO>>(stud);
 
@@ -36,9 +38,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var stud = await _context.Students
-                .Include(x => x.ClassRoom)
-                .FirstOrDefaultAsync(x => x.Id == id);
+            var stud = await _repo.GetById(id);
 
             if(stud == null)
             {
@@ -61,14 +61,13 @@ namespace School_System.Controllers
                 return BadRequest("ClassRoom Cannot Be Null");
             }
 
-            await _context.Students.AddAsync(student);
-            await _context.SaveChangesAsync();
+            await _repo.AddAsync(student);
             return CreatedAtAction(nameof(GetById), new { id = student.Id }, student);
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateStudent(int id, UpdateStudentDTO dto)
         {
-            var student = await _context.Students.FindAsync(id);
+            var student = await _repo.GetById(id);
 
             if (student == null)
             {
@@ -76,21 +75,20 @@ namespace School_System.Controllers
             }
 
             _mapper.Map(dto, student);
-            await _context.SaveChangesAsync();
+            await _repo.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteStudent(int id)
         {
-            var student = await _context.Students.FindAsync(id);
+            var student = await _repo.GetById(id);
             if (student == null)
             {
                 return NotFound("Student Not Found");
             }
 
-            _context.Students.Remove(student);
-            await _context.SaveChangesAsync();
+            _repo.Delete(student);
             return NoContent();
         }
     }

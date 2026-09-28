@@ -14,12 +14,14 @@ namespace School_System.Controllers
     [ApiController]
     public class DepartmentController : ControllerBase
     {
-        private readonly IDepartmentRepo _repo;
+        private readonly IGenericRepo<Department> _repo;
+        private readonly DepartmentRepo _deptrepo;
         private readonly IMapper _mapper;
-        public DepartmentController(IMapper mapper, IDepartmentRepo repo)
+        public DepartmentController(IMapper mapper, IGenericRepo<Department> repo, DepartmentRepo deptrepo)
         {
             _repo = repo;
             _mapper = mapper;
+            _deptrepo = deptrepo;
         }
 
         [HttpGet]
@@ -35,7 +37,7 @@ namespace School_System.Controllers
         [HttpGet("Search")]
         public async Task<IActionResult> SearchByTeacherName(string fullName)
         {
-            var department = await _repo.SearchByTeacherName(fullName);
+            var department = await _deptrepo.SearchByTeacherName(fullName);
 
             if (department == null)
             {
@@ -86,9 +88,8 @@ namespace School_System.Controllers
             }
 
             _mapper.Map(dto, department);
-
             await _repo.SaveChangesAsync();
-
+                
             return NoContent();
         }
         

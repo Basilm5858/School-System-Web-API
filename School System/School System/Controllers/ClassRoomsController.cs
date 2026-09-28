@@ -12,9 +12,9 @@ namespace School_System.Controllers
     [ApiController]
     public class ClassRoomsController : ControllerBase
     {
-        private readonly IClassRoomRepo _repo;
+        private readonly IGenericRepo<ClassRoom> _repo;
         private readonly IMapper _mapper;
-        public ClassRoomsController(IMapper mapper, IClassRoomRepo repo)
+        public ClassRoomsController(IMapper mapper, IGenericRepo<ClassRoom> repo)
         {
             _repo = repo;
             _mapper = mapper;
@@ -61,7 +61,7 @@ namespace School_System.Controllers
                 return BadRequest("ClassRoom Cannot Be Null");
             }
 
-            await _repo.Add(res);
+            await _repo.AddAsync(res);
             await _repo.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetClassRoomById), new { id = res.Id }, res);
@@ -78,7 +78,6 @@ namespace School_System.Controllers
             }
 
             var res = _mapper.Map(dto, classRoom);
-
             await _repo.SaveChangesAsync();
 
             return NoContent();

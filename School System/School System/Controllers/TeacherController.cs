@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using School_System.DTOs;
 using School_System.Models;
+using School_System.Repo.Interfaces;
 
 namespace School_System.Controllers
 {
@@ -11,19 +12,17 @@ namespace School_System.Controllers
     [ApiController]
     public class TeacherController : ControllerBase
     {
-        private readonly My_AppContext _context;
+        private readonly IGenericRepo<Teacher> _repo;
         private readonly IMapper _mapper;
-        public TeacherController(IMapper mapper, My_AppContext context)
+        public TeacherController(IMapper mapper, IGenericRepo<Teacher> repo)
         {
-            _context = context;
+            _repo = repo;
             _mapper = mapper;
         }
         [HttpGet]
         public async Task<IActionResult> GetTeachers()
         {
-            var teachers = await _context.Teachers
-                .Include(x => x.Department)
-                .ToListAsync();
+            var teachers = await _repo.GetAll();
 
             var res = _mapper.Map<List<TeacherDTO>>(teachers);
 
@@ -32,9 +31,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var teachers = await _context.Teachers
-                .Include(x => x.Department)
-                .FirstOrDefaultAsync(x => x.Id == id);
+            var teachers = await _repo.GetById(id);
 
             if (teachers == null)
             {
@@ -50,8 +47,8 @@ namespace School_System.Controllers
         {
             var res = _mapper.Map<Teacher>(dto);
 
-            _context.Teachers.Add(res);
-            await _context.SaveChangesAsync();
+            await _repo.AddAsync(res);
+            await _repo.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = res.Id }, res);
         }
@@ -59,7 +56,7 @@ namespace School_System.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateTeacher(int id, UpdateTeacherDTO dto)
         {
-            var teacher = await _context.Teachers.FindAsync(id);
+            var teacher = await _repo.GetById(id);
             if (teacher == null)
             {
                 return NotFound();
@@ -67,21 +64,21 @@ namespace School_System.Controllers
 
            var res = _mapper.Map(dto, teacher);
 
-            await _context.SaveChangesAsync();
+            await _repo.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteTeacher(int id)
         {
-            var teacher = await _context.Teachers.FindAsync(id);
+            var teacher = await _repo.GetById(id);
             if (teacher == null)
             {
                 return NotFound();
             }
 
-            _context.Teachers.Remove(teacher);
-            await _context.SaveChangesAsync();
+            _repo.Delete(teacher);
+            await _repo.SaveChangesAsync();
             return NoContent();
         }
     }
