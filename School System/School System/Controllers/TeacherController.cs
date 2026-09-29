@@ -103,11 +103,37 @@ namespace School_System.Controllers
             var res = _mapper.Map<TeacherDTO>(teacher);
             return Ok(res);
         }
+
         [HttpGet("Endpoint9")]
         public async Task<IActionResult> EndPoint9(int id)
         {
             var teacher = await _customRepo.EndPoint9Async(id);
             //var res = _mapper.Map<TeacherDTO>(teacher);
+            return Ok(teacher);
+        }
+        [HttpGet("Endpoint12")]
+        public async Task<IActionResult> EndPoint12(int id)
+        {
+            var teacher = await _customRepo.EndPoint12Async(id);
+
+            if(teacher == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(teacher);
+        }
+
+        [HttpGet("Endpoint15")]
+        public async Task<IActionResult> EndPoint15()
+        {
+            var teacher = await _customRepo.EndPoint15Async();
+
+            if (teacher == null)
+            {
+                return NotFound();
+            }
+
             return Ok(teacher);
         }
     }

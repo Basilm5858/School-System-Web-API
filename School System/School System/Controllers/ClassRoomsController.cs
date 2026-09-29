@@ -134,5 +134,13 @@ namespace School_System.Controllers
             var res = _mapper.Map<ClassRoomsDTO>(classes);
             return Ok(res);
         }
+        [HttpGet("EndPoint10")]
+        public async Task<IActionResult> EndPoint10(int gradelevel, int capacity)
+        {
+            var classes = await _repo.EndPoint10(gradelevel, capacity);
+
+            //var res = _mapper.Map<ClassRoomsDTO>(classes);
+            return Ok(classes);
+        }
     }
 }

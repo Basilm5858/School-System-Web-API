@@ -7,5 +7,6 @@ namespace School_System.Repo.Interfaces
         Task<ClassRoom> EndPoint3(int capacity);
         Task<ClassRoom> EndPoint5(string name);
         Task<ClassRoom> EndPoint8(int index);
+        Task<bool> EndPoint10(int gradelevel, int capacity);
     }
 }

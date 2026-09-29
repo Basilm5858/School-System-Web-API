@@ -13,6 +13,13 @@ namespace School_System.DTOs
         public int MaxGrade { get; set; }
         public string TeacherName { get; set; } = string.Empty;
     }
+    public class SubjectDTOEndPoint13
+    {
+        public int Id { get; set; }
+        [Required, MaxLength(100)]
+        public string Name { get; set; } = string.Empty;
+        public int MaxGrade { get; set; }
+    }
     public class CreateSubjectDTO
     {
         [Required, MaxLength(100)]

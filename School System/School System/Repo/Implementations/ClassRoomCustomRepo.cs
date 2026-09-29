@@ -28,5 +28,11 @@ namespace School_System.Repo.Implementations
                 .OrderBy(x => x.Id)
                 .ElementAtAsync(index);
         }
+        public async Task<bool> EndPoint10(int gradelevel, int capacity)
+        {
+            return await _context.Classrooms
+                .AnyAsync(x => x.GradeLevel >= gradelevel && x.Capacity >= capacity);
+        }
+        
     }
 }

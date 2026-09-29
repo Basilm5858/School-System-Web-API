@@ -15,6 +15,11 @@ namespace School_System.DTOs
         [Required, Range(1, int.MaxValue)]
         public int Salary { get; set; }
     }
+    public class TeacherDTOEndPoint12
+    {
+        public int Id { get; set; }
+        public string FullName { get; set; } = string.Empty;
+    }
     public class CreateTeacherDTO
     {
         [EmailAddress]

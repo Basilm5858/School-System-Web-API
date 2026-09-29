@@ -13,7 +13,6 @@ namespace School_System.Repo.Implementations
             _context = context;
         }
 
-
         public async Task<Department> SearchByTeacherName(string fullName)
         {
             return await _context.Departments

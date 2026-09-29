@@ -218,6 +218,27 @@
   },
   {
     "ContainingType": "School_System.Controllers.ClassRoomsController",
+    "Method": "EndPoint10",
+    "RelativePath": "api/ClassRooms/EndPoint10",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gradelevel",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "capacity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.ClassRoomsController",
     "Method": "EndPoint3",
     "RelativePath": "api/ClassRooms/EndPoint3",
     "HttpMethod": "GET",
@@ -614,6 +635,74 @@
   },
   {
     "ContainingType": "School_System.Controllers.SubjectController",
+    "Method": "EndPoint11",
+    "RelativePath": "api/Subject/EndPoint11",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id1",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "id2",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "id3",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.SubjectController",
+    "Method": "EndPoint13",
+    "RelativePath": "api/Subject/EndPoint13",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacherid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.SubjectController",
+    "Method": "EndPoint14",
+    "RelativePath": "api/Subject/EndPoint14",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.SubjectController",
+    "Method": "EndPoint16",
+    "RelativePath": "api/Subject/EndPoint16",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.SubjectController",
     "Method": "EndPoint2",
     "RelativePath": "api/Subject/EndPoint2",
     "HttpMethod": "GET",
@@ -742,6 +831,32 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.TeacherController",
+    "Method": "EndPoint12",
+    "RelativePath": "api/Teacher/Endpoint12",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.TeacherController",
+    "Method": "EndPoint15",
+    "RelativePath": "api/Teacher/Endpoint15",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

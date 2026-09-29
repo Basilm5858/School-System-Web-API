@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using School_System.DTOs;
 using School_System.Models;
 using School_System.Repo.Interfaces;
 
@@ -12,7 +13,7 @@ namespace School_System.Repo.Implementations
             _context = context;
         }
 
-        public async Task<List<Teacher>> GetTeachersWithDepartment()
+        public async Task<ICollection<Teacher>> GetTeachersWithDepartment()
         {
             return await _context.Teachers
                 .Include(x => x.Department)
@@ -35,6 +36,22 @@ namespace School_System.Repo.Implementations
             return await _context.Teachers
                 .AnyAsync(x => x.Id == id && x.Subjects.Count != 0);
                 
+        }
+        public async Task<ICollection<TeacherDTOEndPoint12>> EndPoint12Async(int departmentid)
+        {
+            return await _context.Teachers
+                .Where(x => x.DepartmentId == departmentid)
+                .Select(x => new TeacherDTOEndPoint12
+                {
+                    FullName = x.FirstName + " " + x.LastName,
+                    Id = x.Id,
+                }).ToListAsync();
+        }
+        public async Task<ICollection<Teacher>> EndPoint15Async()
+        {
+            return await _context.Teachers
+                .OrderBy(x => x.Salary)
+                .ToListAsync();
         }
     }
 }

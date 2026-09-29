@@ -16,7 +16,7 @@ namespace School_System.Controllers
         private readonly ISubject _customRepo;
         private readonly IMapper _mapper;
 
-        public SubjectController(IMapper mapper, SubjectCustomRepo customRepo)
+        public SubjectController(IMapper mapper, ISubject customRepo)
         {
             _mapper = mapper;
             _customRepo = customRepo;
@@ -114,6 +114,38 @@ namespace School_System.Controllers
 
             var res = _mapper.Map<List<SubjectDTO>>(subject);
             return Ok(res);
+        }
+        [HttpGet("EndPoint11")]
+        public async Task<IActionResult> EndPoint11(int id1, int id2, int id3)
+        {
+            var subject = await _customRepo.EndPoint11(id1, id2, id3);
+
+            //var res = _mapper.Map<List<SubjectDTO>>(subject);
+
+            return Ok(subject);
+        }
+
+        [HttpGet("EndPoint13")]
+        public async Task<IActionResult> EndPoint13(int teacherid)
+        {
+            var subject = await _customRepo.EndPoint13(teacherid);
+
+            return Ok(subject);
+        }
+        [HttpGet("EndPoint14")]
+        public async Task<IActionResult> EndPoint14(int departmentid)
+        {
+            var subject = await _customRepo.EndPoint14(departmentid);
+
+            return Ok(subject);
+        }
+
+        [HttpGet("EndPoint16")]
+        public async Task<IActionResult> EndPoint16()
+        {
+            var subject = await _customRepo.EndPoint16();
+
+            return Ok(subject);
         }
     }
 }
