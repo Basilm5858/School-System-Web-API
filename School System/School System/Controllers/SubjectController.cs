@@ -13,7 +13,7 @@ namespace School_System.Controllers
     [ApiController]
     public class SubjectController : ControllerBase
     {
-        private readonly SubjectCustomRepo _customRepo;
+        private readonly ISubject _customRepo;
         private readonly IMapper _mapper;
 
         public SubjectController(IMapper mapper, SubjectCustomRepo customRepo)

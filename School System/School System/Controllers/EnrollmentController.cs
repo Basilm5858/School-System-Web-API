@@ -14,7 +14,7 @@ namespace School_System.Controllers
     [ApiController]
     public class EnrollmentController : ControllerBase
     {
-        private readonly EnrollmentCustomRepo _customrepo;
+        private readonly IEnrollment _customrepo;
         private readonly IMapper _mapper;
         public EnrollmentController(IMapper mapper, EnrollmentCustomRepo customerRepo)
         {

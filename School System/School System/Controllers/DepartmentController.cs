@@ -14,7 +14,7 @@ namespace School_System.Controllers
     [ApiController]
     public class DepartmentController : ControllerBase
     {
-        private readonly DepartmentRepo _repo;
+        private readonly IDepartment _repo;
         private readonly IMapper _mapper;
         public DepartmentController(IMapper mapper, DepartmentRepo deptrepo)
         {

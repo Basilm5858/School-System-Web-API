@@ -4,7 +4,7 @@ using School_System.Repo.Interfaces;
 
 namespace School_System.Repo.Implementations
 {
-    public class DepartmentRepo : GenericRepo<Department>
+    public class DepartmentRepo : GenericRepo<Department> , IDepartment
     {
         private readonly My_AppContext _context;
 

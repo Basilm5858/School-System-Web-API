@@ -20,11 +20,11 @@ builder.Services.AddScoped<IGenericRepo<Student>, GenericRepo<Student>>();
 builder.Services.AddScoped<IGenericRepo<Enrollment>, GenericRepo<Enrollment>>();
 builder.Services.AddScoped<IGenericRepo<Teacher>, GenericRepo<Teacher>>();
 builder.Services.AddScoped<IGenericRepo<Subject>, GenericRepo<Subject>>();
-builder.Services.AddScoped<SubjectCustomRepo>();
-builder.Services.AddScoped<TeacherCustomRepo>();
-builder.Services.AddScoped<DepartmentRepo>();
-builder.Services.AddScoped<EnrollmentCustomRepo>();
-builder.Services.AddScoped<StuedentCustomRepo>();
+builder.Services.AddScoped<ISubject ,SubjectCustomRepo>();
+builder.Services.AddScoped<ITeacher, TeacherCustomRepo>();
+builder.Services.AddScoped<IDepartment, DepartmentRepo>();
+builder.Services.AddScoped<IEnrollment , EnrollmentCustomRepo>();
+builder.Services.AddScoped<IStuedent, StuedentCustomRepo>();
 
 builder.Services.AddDbContext<My_AppContext>(options => 
     options.UseSqlServer(

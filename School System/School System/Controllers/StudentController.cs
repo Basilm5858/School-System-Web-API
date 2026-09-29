@@ -14,7 +14,7 @@ namespace School_System.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private readonly StuedentCustomRepo _customRepo;
+        private readonly IStuedent _customRepo;
         private readonly IMapper _mapper;
 
         public StudentController(IMapper mapper, StuedentCustomRepo customRepo)
