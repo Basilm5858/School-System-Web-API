@@ -25,6 +25,7 @@ builder.Services.AddScoped<ITeacher, TeacherCustomRepo>();
 builder.Services.AddScoped<IDepartment, DepartmentRepo>();
 builder.Services.AddScoped<IEnrollment , EnrollmentCustomRepo>();
 builder.Services.AddScoped<IStuedent, StuedentCustomRepo>();
+builder.Services.AddScoped<IClassRoom, ClassRoomCustomRepo>();
 
 builder.Services.AddDbContext<My_AppContext>(options => 
     options.UseSqlServer(

@@ -16,7 +16,7 @@ namespace School_System.Controllers
     {
         private readonly IEnrollment _customrepo;
         private readonly IMapper _mapper;
-        public EnrollmentController(IMapper mapper, EnrollmentCustomRepo customerRepo)
+        public EnrollmentController(IMapper mapper, IEnrollment customerRepo)
         {
             _mapper = mapper;
             _customrepo = customerRepo;
@@ -86,6 +86,19 @@ namespace School_System.Controllers
             await _customrepo.SaveChangesAsync();
             return NoContent();
 
+        }
+
+        [HttpGet("EndPoint6")]
+        public async Task<IActionResult> EndPoint6(int subjectid)
+        {
+            var enrollment = await _customrepo.EndPoint6(subjectid);
+            if (enrollment == null)
+            {
+                return NotFound();
+            }
+            var res = _mapper.Map<Enrollment>(enrollment);
+
+            return Ok(res);
         }
 
     }

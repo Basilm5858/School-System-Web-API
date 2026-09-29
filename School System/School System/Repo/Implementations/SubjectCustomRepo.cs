@@ -11,6 +11,22 @@ namespace School_System.Repo.Implementations
         {
             _context = context;
         }
+
+        public async Task<Subject> EndPoint2Async(int id)
+        {
+            return await _context.Subjects
+                .Include(x => x.Teacher)
+                .FirstAsync(x => x.TeacherId == id);
+        }
+        public async Task<Subject> EndPoint7(int teacherid)
+        {
+            return await _context.Subjects
+                .Include(x => x.Teacher)
+                .OrderByDescending(x => x.Id)
+                .LastOrDefaultAsync(x => x.TeacherId == teacherid);
+        }
+
+
         public async Task<List<Subject>> GetSubjectsWithTeachers()
         {
             return await _context.Subjects

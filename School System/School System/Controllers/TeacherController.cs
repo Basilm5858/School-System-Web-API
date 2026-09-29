@@ -82,5 +82,33 @@ namespace School_System.Controllers
             await _customRepo.SaveChangesAsync();
             return NoContent();
         }
+
+        [HttpGet("EndPoint1")]
+        public async Task<IActionResult> EndPoint1(int id, decimal salary)
+        {
+            var teachers = await _customRepo.EndPoint1Async(id, salary);
+
+            if(teachers == null)
+            {
+                return NotFound();
+            }
+
+            var res = _mapper.Map<List<TeacherDTO>>(teachers);
+            return Ok(res);
+        }
+        [HttpGet("Endpoint4")]
+        public async Task<IActionResult> EndPoint4(string email)
+        {
+            var teacher = await _customRepo.EndPoint4Async(email);
+            var res = _mapper.Map<TeacherDTO>(teacher);
+            return Ok(res);
+        }
+        [HttpGet("Endpoint9")]
+        public async Task<IActionResult> EndPoint9(int id)
+        {
+            var teacher = await _customRepo.EndPoint9Async(id);
+            //var res = _mapper.Map<TeacherDTO>(teacher);
+            return Ok(teacher);
+        }
     }
 }

@@ -217,6 +217,54 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "School_System.Controllers.ClassRoomsController",
+    "Method": "EndPoint3",
+    "RelativePath": "api/ClassRooms/EndPoint3",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "capacity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.ClassRoomsController",
+    "Method": "EndPoint5",
+    "RelativePath": "api/ClassRooms/EndPoint5",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.ClassRoomsController",
+    "Method": "EndPoint8",
+    "RelativePath": "api/ClassRooms/EndPoint8",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "index",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "School_System.Controllers.DepartmentController",
     "Method": "GetDepartments",
     "RelativePath": "api/Department",
@@ -391,6 +439,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "School_System.Controllers.EnrollmentController",
+    "Method": "EndPoint6",
+    "RelativePath": "api/Enrollment/EndPoint6",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "School_System.Controllers.StudentController",
     "Method": "GetStudents",
     "RelativePath": "api/Student",
@@ -549,6 +613,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "School_System.Controllers.SubjectController",
+    "Method": "EndPoint2",
+    "RelativePath": "api/Subject/EndPoint2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.SubjectController",
+    "Method": "EndPoint7",
+    "RelativePath": "api/Subject/EndPoint7",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacherid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "School_System.Controllers.TeacherController",
     "Method": "GetTeachers",
     "RelativePath": "api/Teacher",
@@ -623,6 +719,59 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.TeacherController",
+    "Method": "EndPoint1",
+    "RelativePath": "api/Teacher/EndPoint1",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "salary",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.TeacherController",
+    "Method": "EndPoint4",
+    "RelativePath": "api/Teacher/Endpoint4",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "School_System.Controllers.TeacherController",
+    "Method": "EndPoint9",
+    "RelativePath": "api/Teacher/Endpoint9",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

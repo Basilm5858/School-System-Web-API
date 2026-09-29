@@ -18,5 +18,13 @@ namespace School_System.Repo.Implementations
                 .Include(x => x.Subject)
                 .ToListAsync();
         }
+        public async Task<Enrollment> EndPoint6(int subjectid)
+        {
+            return await _context.Enrollments
+                .Include(x => x.Subject)
+                .Include(x => x.Student)
+                .OrderBy(x => x.EnrollmentDate)
+                .LastAsync(x => x.SubjectId == subjectid);
+        }
     }
 }

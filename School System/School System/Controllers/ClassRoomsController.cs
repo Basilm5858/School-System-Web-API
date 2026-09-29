@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using School_System.DTOs;
 using School_System.Models;
+using School_System.Repo.Implementations;
 using School_System.Repo.Interfaces;
 
 namespace School_System.Controllers
@@ -12,9 +13,9 @@ namespace School_System.Controllers
     [ApiController]
     public class ClassRoomsController : ControllerBase
     {
-        private readonly IGenericRepo<ClassRoom> _repo;
+        private readonly IClassRoom _repo;
         private readonly IMapper _mapper;
-        public ClassRoomsController(IMapper mapper, IGenericRepo<ClassRoom> repo)
+        public ClassRoomsController(IMapper mapper, IClassRoom repo)
         {
             _repo = repo;
             _mapper = mapper;
@@ -96,6 +97,42 @@ namespace School_System.Controllers
             _repo.Delete(classRoom);
             await _repo.SaveChangesAsync();
             return NoContent();
+        }
+        [HttpGet("EndPoint3")]
+        public async Task<IActionResult> EndPoint3(int capacity)
+        {
+            var classRoom = await _repo.EndPoint3(capacity);
+
+            if(classRoom == null)
+            {
+                return NotFound();
+            }
+            var res = _mapper.Map<ClassRoomsDTO>(classRoom);
+            return Ok(res);
+        }
+        [HttpGet("EndPoint5")]
+        public async Task<IActionResult> EndPoint5(string name)
+        {
+            var classes = await _repo.EndPoint5(name);
+
+            if (classes == null)
+            {
+                return NotFound();
+            }
+            var res = _mapper.Map<ClassRoomsDTO>(classes);
+            return Ok(res);
+        }
+        [HttpGet("EndPoint8")]
+        public async Task<IActionResult> EndPoint8(int index)
+        {
+            var classes = await _repo.EndPoint8(index);
+
+            if (classes == null)
+            {
+                return NotFound();
+            }
+            var res = _mapper.Map<ClassRoomsDTO>(classes);
+            return Ok(res);
         }
     }
 }

@@ -18,5 +18,23 @@ namespace School_System.Repo.Implementations
                 .Include(x => x.Department)
                 .ToListAsync();
         }
+        public async Task<ICollection<Teacher>> EndPoint1Async(int id, decimal salary)
+        {
+            return await _context.Teachers
+                .Where(x => x.Id == id && x.Salary >= salary)
+                .ToListAsync();
+        }
+        public async Task<Teacher> EndPoint4Async(string email)
+        {
+            return await _context.Teachers
+                .FirstOrDefaultAsync(x => x.Email == email);
+        }
+
+        public async Task<bool> EndPoint9Async(int id)
+        {
+            return await _context.Teachers
+                .AnyAsync(x => x.Id == id && x.Subjects.Count != 0);
+                
+        }
     }
 }
