@@ -1,1 +1,12 @@
-{"Version":1,"Hash":"Wy3zueCtM0kGJ83mL9rerFePRspFgePJLNRR/o9cUwU=","Source":"School System","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "pZecOoYX6Fu2ppb24wzdXT9lYzhm35q2lUERpkZrL8I=",
+  "Source": "School System",
+  "BasePath": "_content/School System",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

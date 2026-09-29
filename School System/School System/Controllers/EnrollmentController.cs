@@ -14,12 +14,10 @@ namespace School_System.Controllers
     [ApiController]
     public class EnrollmentController : ControllerBase
     {
-        private readonly IGenericRepo<Enrollment> _repo;
         private readonly EnrollmentCustomRepo _customrepo;
         private readonly IMapper _mapper;
-        public EnrollmentController(IMapper mapper, IGenericRepo<Enrollment> repo, EnrollmentCustomRepo customerRepo)
+        public EnrollmentController(IMapper mapper, EnrollmentCustomRepo customerRepo)
         {
-            _repo = repo;
             _mapper = mapper;
             _customrepo = customerRepo;
         }
@@ -41,7 +39,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var enrollments = await _repo.GetById(id);
+            var enrollments = await _customrepo.GetById(id);
             var res = _mapper.Map<EnrollmentDTO>(enrollments);
             return Ok(res);
         }
@@ -56,36 +54,36 @@ namespace School_System.Controllers
                 return BadRequest("Enrollment Cannot Be Null");
             }
 
-            await _repo.AddAsync(enrollment);
-            await _repo.SaveChangesAsync();
+            await _customrepo.AddAsync(enrollment);
+            await _customrepo.SaveChangesAsync();
             return Ok(enrollment);
         }
 
         [HttpPut]
         public async Task<IActionResult> UpdateEnrollment(int id, UpdateEnrollmentDTO dto)
         {
-            var enrollment = await _repo.GetById(id);
+            var enrollment = await _customrepo.GetById(id);
             if (enrollment == null)
             {
                 return NotFound("Enrollment Not Found");
             }
 
             _mapper.Map(dto, enrollment);
-            await _repo.SaveChangesAsync();
+            await _customrepo.SaveChangesAsync();
             return NoContent();
         }
         [HttpDelete]
         public async Task<IActionResult> DeleteEnrollment(int id)
         {
-            var enrollment = await _repo.GetById(id);
+            var enrollment = await _customrepo.GetById(id);
 
             if (enrollment == null)
             {
                 return NotFound("Enrollment Not Found");
             }
 
-            _repo.Delete(enrollment);
-            await _repo.SaveChangesAsync();
+            _customrepo.Delete(enrollment);
+            await _customrepo.SaveChangesAsync();
             return NoContent();
 
         }

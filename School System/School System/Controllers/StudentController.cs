@@ -14,15 +14,13 @@ namespace School_System.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private readonly IGenericRepo<Student> _repo;
         private readonly StuedentCustomRepo _customRepo;
         private readonly IMapper _mapper;
 
-        public StudentController(IMapper mapper,IGenericRepo<Student> genericRepo,StuedentCustomRepo customRepo)
+        public StudentController(IMapper mapper, StuedentCustomRepo customRepo)
         {
             _mapper = mapper;
             _customRepo = customRepo;
-            _repo = genericRepo;
         }
 
         [HttpGet]
@@ -38,7 +36,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var stud = await _repo.GetById(id);
+            var stud = await _customRepo.GetById(id);
 
             if(stud == null)
             {
@@ -61,13 +59,13 @@ namespace School_System.Controllers
                 return BadRequest("ClassRoom Cannot Be Null");
             }
 
-            await _repo.AddAsync(student);
+            await _customRepo.AddAsync(student);
             return CreatedAtAction(nameof(GetById), new { id = student.Id }, student);
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateStudent(int id, UpdateStudentDTO dto)
         {
-            var student = await _repo.GetById(id);
+            var student = await _customRepo.GetById(id);
 
             if (student == null)
             {
@@ -75,20 +73,20 @@ namespace School_System.Controllers
             }
 
             _mapper.Map(dto, student);
-            await _repo.SaveChangesAsync();
+            await _customRepo.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteStudent(int id)
         {
-            var student = await _repo.GetById(id);
+            var student = await _customRepo.GetById(id);
             if (student == null)
             {
                 return NotFound("Student Not Found");
             }
 
-            _repo.Delete(student);
+            _customRepo.Delete(student);
             return NoContent();
         }
     }

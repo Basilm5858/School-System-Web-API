@@ -13,13 +13,11 @@ namespace School_System.Controllers
     [ApiController]
     public class SubjectController : ControllerBase
     {
-        private readonly IGenericRepo<Subject> _repo;
         private readonly SubjectCustomRepo _customRepo;
         private readonly IMapper _mapper;
 
-        public SubjectController(IMapper mapper, IGenericRepo<Subject> repo, SubjectCustomRepo customRepo)
+        public SubjectController(IMapper mapper, SubjectCustomRepo customRepo)
         {
-            _repo = repo;
             _mapper = mapper;
             _customRepo = customRepo;
         }
@@ -36,7 +34,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var subject = await _repo.GetById(id);
+            var subject = await _customRepo.GetById(id);
 
             if (subject == null)
             {
@@ -59,36 +57,36 @@ namespace School_System.Controllers
                 return BadRequest("ClassRoom Cannot Be Null");
             }
 
-            await _repo.AddAsync(subject);
-            await _repo.SaveChangesAsync();
+            await _customRepo.AddAsync(subject);
+            await _customRepo.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = subject.Id }, subject);
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateSubject(int id, UpdateSubjectDTO dto)
         {
-            var subject = await _repo.GetById(id);
+            var subject = await _customRepo.GetById(id);
             if (subject == null)
             {
                 return NotFound("Subject Not Found");
             }
 
             _mapper.Map(dto, subject);
-            await _repo.SaveChangesAsync();
+            await _customRepo.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteSubject(int id)
         {
-            var subject = await _repo.GetById(id);
+            var subject = await _customRepo.GetById(id);
             if (subject == null)
             {
                 return NotFound("Student Not Found");
             }
 
-            _repo.Delete(subject);
-            await _repo.SaveChangesAsync();
+            _customRepo.Delete(subject);
+            await _customRepo.SaveChangesAsync();
             return NoContent();
         }
     }

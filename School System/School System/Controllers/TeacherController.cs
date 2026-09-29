@@ -13,12 +13,10 @@ namespace School_System.Controllers
     [ApiController]
     public class TeacherController : ControllerBase
     {
-        private readonly IGenericRepo<Teacher> _repo;
         private readonly TeacherCustomRepo _customRepo;
         private readonly IMapper _mapper;
-        public TeacherController(IMapper mapper, IGenericRepo<Teacher> repo, TeacherCustomRepo customRepo)
+        public TeacherController(IMapper mapper, TeacherCustomRepo customRepo)
         {
-            _repo = repo;
             _mapper = mapper;
             _customRepo = customRepo;
         }
@@ -34,7 +32,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var teachers = await _repo.GetById(id);
+            var teachers = await _customRepo.GetById(id);
 
             if (teachers == null)
             {
@@ -50,8 +48,8 @@ namespace School_System.Controllers
         {
             var res = _mapper.Map<Teacher>(dto);
 
-            await _repo.AddAsync(res);
-            await _repo.SaveChangesAsync();
+            await _customRepo.AddAsync(res);
+            await _customRepo.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = res.Id }, res);
         }
@@ -59,7 +57,7 @@ namespace School_System.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateTeacher(int id, UpdateTeacherDTO dto)
         {
-            var teacher = await _repo.GetById(id);
+            var teacher = await _customRepo.GetById(id);
             if (teacher == null)
             {
                 return NotFound();
@@ -67,21 +65,21 @@ namespace School_System.Controllers
 
            var res = _mapper.Map(dto, teacher);
 
-            await _repo.SaveChangesAsync();
+            await _customRepo.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteTeacher(int id)
         {
-            var teacher = await _repo.GetById(id);
+            var teacher = await _customRepo.GetById(id);
             if (teacher == null)
             {
                 return NotFound();
             }
 
-            _repo.Delete(teacher);
-            await _repo.SaveChangesAsync();
+            _customRepo.Delete(teacher);
+            await _customRepo.SaveChangesAsync();
             return NoContent();
         }
     }
