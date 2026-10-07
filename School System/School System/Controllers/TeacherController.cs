@@ -13,17 +13,17 @@ namespace School_System.Controllers
     [ApiController]
     public class TeacherController : ControllerBase
     {
-        private readonly ITeacher _customRepo;
+        private readonly IUnitOfWork _unitofwork;
         private readonly IMapper _mapper;
-        public TeacherController(IMapper mapper, ITeacher customRepo)
+        public TeacherController(IMapper mapper, IUnitOfWork customRepo)
         {
             _mapper = mapper;
-            _customRepo = customRepo;
+            _unitofwork = customRepo;
         }
         [HttpGet]
         public async Task<IActionResult> GetTeachers()
         {
-            var teachers = await _customRepo.GetTeachersWithDepartment();
+            var teachers = await _unitofwork.TeacherCustomRepo.GetTeachersWithDepartment();
 
             var res = _mapper.Map<List<TeacherDTO>>(teachers);
 
@@ -32,7 +32,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var teachers = await _customRepo.GetById(id);
+            var teachers = await _unitofwork.TeacherCustomRepo.GetById(id);
 
             if (teachers == null)
             {
@@ -48,8 +48,8 @@ namespace School_System.Controllers
         {
             var res = _mapper.Map<Teacher>(dto);
 
-            await _customRepo.AddAsync(res);
-            await _customRepo.SaveChangesAsync();
+            await _unitofwork.TeacherCustomRepo.AddAsync(res);
+            await _unitofwork.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = res.Id }, res);
         }
@@ -57,7 +57,7 @@ namespace School_System.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateTeacher(int id, UpdateTeacherDTO dto)
         {
-            var teacher = await _customRepo.GetById(id);
+            var teacher = await _unitofwork.TeacherCustomRepo.GetById(id);
             if (teacher == null)
             {
                 return NotFound();
@@ -65,28 +65,28 @@ namespace School_System.Controllers
 
            var res = _mapper.Map(dto, teacher);
 
-            await _customRepo.SaveChangesAsync();
+            await _unitofwork.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteTeacher(int id)
         {
-            var teacher = await _customRepo.GetById(id);
+            var teacher = await _unitofwork.TeacherCustomRepo.GetById(id);
             if (teacher == null)
             {
                 return NotFound();
             }
 
-            _customRepo.Delete(teacher);
-            await _customRepo.SaveChangesAsync();
+            _unitofwork.TeacherCustomRepo.Delete(teacher);
+            await _unitofwork.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpGet("EndPoint1")]
         public async Task<IActionResult> EndPoint1(int id, decimal salary)
         {
-            var teachers = await _customRepo.EndPoint1Async(id, salary);
+            var teachers = await _unitofwork.TeacherCustomRepo.EndPoint1Async(id, salary);
 
             if(teachers == null)
             {
@@ -99,7 +99,7 @@ namespace School_System.Controllers
         [HttpGet("Endpoint4")]
         public async Task<IActionResult> EndPoint4(string email)
         {
-            var teacher = await _customRepo.EndPoint4Async(email);
+            var teacher = await _unitofwork.TeacherCustomRepo.EndPoint4Async(email);
             var res = _mapper.Map<TeacherDTO>(teacher);
             return Ok(res);
         }
@@ -107,14 +107,14 @@ namespace School_System.Controllers
         [HttpGet("Endpoint9")]
         public async Task<IActionResult> EndPoint9(int id)
         {
-            var teacher = await _customRepo.EndPoint9Async(id);
+            var teacher = await _unitofwork.TeacherCustomRepo.EndPoint9Async(id);
             //var res = _mapper.Map<TeacherDTO>(teacher);
             return Ok(teacher);
         }
         [HttpGet("Endpoint12")]
         public async Task<IActionResult> EndPoint12(int id)
         {
-            var teacher = await _customRepo.EndPoint12Async(id);
+            var teacher = await _unitofwork.TeacherCustomRepo.EndPoint12Async(id);
 
             if(teacher == null)
             {
@@ -127,7 +127,7 @@ namespace School_System.Controllers
         [HttpGet("Endpoint15")]
         public async Task<IActionResult> EndPoint15()
         {
-            var teacher = await _customRepo.EndPoint15Async();
+            var teacher = await _unitofwork.TeacherCustomRepo.EndPoint15Async();
 
             if (teacher == null)
             {

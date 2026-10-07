@@ -14,18 +14,18 @@ namespace School_System.Controllers
     [ApiController]
     public class EnrollmentController : ControllerBase
     {
-        private readonly IEnrollment _customrepo;
+        private readonly IUnitOfWork _unitofwork;
         private readonly IMapper _mapper;
-        public EnrollmentController(IMapper mapper, IEnrollment customerRepo)
+        public EnrollmentController(IMapper mapper, IUnitOfWork customerRepo)
         {
             _mapper = mapper;
-            _customrepo = customerRepo;
+            _unitofwork = customerRepo;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetEnrollments()
         {
-            var enrollments = await _customrepo.GetEnrollmentsWithStudentAndSubject();
+            var enrollments = await _unitofwork.EnrollmentCustomRepo.GetEnrollmentsWithStudentAndSubject();
             if(enrollments == null)
             {
                 return BadRequest("The Enrollment is null");
@@ -39,7 +39,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var enrollments = await _customrepo.GetById(id);
+            var enrollments = await _unitofwork.EnrollmentCustomRepo.GetById(id);
             var res = _mapper.Map<EnrollmentDTO>(enrollments);
             return Ok(res);
         }
@@ -54,36 +54,36 @@ namespace School_System.Controllers
                 return BadRequest("Enrollment Cannot Be Null");
             }
 
-            await _customrepo.AddAsync(enrollment);
-            await _customrepo.SaveChangesAsync();
+            await _unitofwork.EnrollmentCustomRepo.AddAsync(enrollment);
+            await _unitofwork.SaveChangesAsync();
             return Ok(enrollment);
         }
 
         [HttpPut]
         public async Task<IActionResult> UpdateEnrollment(int id, UpdateEnrollmentDTO dto)
         {
-            var enrollment = await _customrepo.GetById(id);
+            var enrollment = await _unitofwork.EnrollmentCustomRepo.GetById(id);
             if (enrollment == null)
             {
                 return NotFound("Enrollment Not Found");
             }
 
             _mapper.Map(dto, enrollment);
-            await _customrepo.SaveChangesAsync();
+            await _unitofwork.SaveChangesAsync();
             return NoContent();
         }
         [HttpDelete]
         public async Task<IActionResult> DeleteEnrollment(int id)
         {
-            var enrollment = await _customrepo.GetById(id);
+            var enrollment = await _unitofwork.EnrollmentCustomRepo.GetById(id);
 
             if (enrollment == null)
             {
                 return NotFound("Enrollment Not Found");
             }
 
-            _customrepo.Delete(enrollment);
-            await _customrepo.SaveChangesAsync();
+            _unitofwork.EnrollmentCustomRepo.Delete(enrollment);
+            await _unitofwork.SaveChangesAsync();
             return NoContent();
 
         }
@@ -91,7 +91,7 @@ namespace School_System.Controllers
         [HttpGet("EndPoint6")]
         public async Task<IActionResult> EndPoint6(int subjectid)
         {
-            var enrollment = await _customrepo.EndPoint6(subjectid);
+            var enrollment = await _unitofwork.EnrollmentCustomRepo.EndPoint6(subjectid);
             if (enrollment == null)
             {
                 return NotFound();

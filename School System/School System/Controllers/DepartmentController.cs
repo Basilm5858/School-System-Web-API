@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,20 +13,21 @@ namespace School_System.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class DepartmentController : ControllerBase
     {
-        private readonly IDepartment _repo;
+        private readonly IUnitOfWork _unitofwork;
         private readonly IMapper _mapper;
-        public DepartmentController(IMapper mapper, DepartmentRepo deptrepo)
+        public DepartmentController(IMapper mapper, IUnitOfWork deptrepo)
         {
             _mapper = mapper;
-            _repo = deptrepo;
+            _unitofwork = deptrepo;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetDepartments()
         {
-            var departments = await _repo.GetAll();
+            var departments = await _unitofwork.DepartmentRepo.GetAll();
 
             var result = _mapper.Map<List<DepartmentDTO>>(departments);
 
@@ -35,7 +37,7 @@ namespace School_System.Controllers
         [HttpGet("Search")]
         public async Task<IActionResult> SearchByTeacherName(string fullName)
         {
-            var department = await _repo.SearchByTeacherName(fullName);
+            var department = await _unitofwork.DepartmentRepo.SearchByTeacherName(fullName);
 
             if (department == null)
             {
@@ -51,7 +53,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var department = await _repo.GetById(id);
+            var department = await _unitofwork.DepartmentRepo.GetById(id);
 
 
             if (department == null)
@@ -69,8 +71,8 @@ namespace School_System.Controllers
         {
             var department = _mapper.Map<Department>(dto);
 
-            await _repo.AddAsync(department);
-            await _repo.SaveChangesAsync();
+            await _unitofwork.DepartmentRepo.AddAsync(department);
+            await _unitofwork.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = department.Id }, department);
         }
@@ -78,7 +80,7 @@ namespace School_System.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateDepartment(int id, UpdateDepartmentDTO dto)
         {
-            var department = await _repo.GetById(id);
+            var department = await _unitofwork.DepartmentRepo.GetById(id);
 
             if (department == null)
             {
@@ -86,7 +88,7 @@ namespace School_System.Controllers
             }
 
             _mapper.Map(dto, department);
-            await _repo.SaveChangesAsync();
+            await _unitofwork.SaveChangesAsync();
                 
             return NoContent();
         }
@@ -94,15 +96,15 @@ namespace School_System.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
-            var res = await _repo.GetById(id);
+            var res = await _unitofwork.DepartmentRepo.GetById(id);
 
             if (res == null)
             {
                 return BadRequest("Department Not Found");
             }
 
-            _repo.Delete(res);
-            await _repo.SaveChangesAsync();
+            _unitofwork.DepartmentRepo.Delete(res);
+            await _unitofwork.SaveChangesAsync();
             return NoContent();
         }
     }

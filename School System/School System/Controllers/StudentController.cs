@@ -14,19 +14,19 @@ namespace School_System.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private readonly IStuedent _customRepo;
+        private readonly IUnitOfWork _unitofwork;
         private readonly IMapper _mapper;
 
-        public StudentController(IMapper mapper, StuedentCustomRepo customRepo)
+        public StudentController(IMapper mapper, IUnitOfWork customRepo)
         {
             _mapper = mapper;
-            _customRepo = customRepo;
+            _unitofwork = customRepo;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetStudents()
         {
-            var stud = await _customRepo.IncludeClassRoom();
+            var stud = await _unitofwork.StuedentCustomRepo.IncludeClassRoom();
 
             var res = _mapper.Map<List<StudentDTO>>(stud);
 
@@ -36,7 +36,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var stud = await _customRepo.GetById(id);
+            var stud = await _unitofwork.StuedentCustomRepo.GetById(id);
 
             if(stud == null)
             {
@@ -59,13 +59,13 @@ namespace School_System.Controllers
                 return BadRequest("ClassRoom Cannot Be Null");
             }
 
-            await _customRepo.AddAsync(student);
+            await _unitofwork.StuedentCustomRepo.AddAsync(student);
             return CreatedAtAction(nameof(GetById), new { id = student.Id }, student);
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateStudent(int id, UpdateStudentDTO dto)
         {
-            var student = await _customRepo.GetById(id);
+            var student = await _unitofwork.StuedentCustomRepo.GetById(id);
 
             if (student == null)
             {
@@ -73,20 +73,20 @@ namespace School_System.Controllers
             }
 
             _mapper.Map(dto, student);
-            await _customRepo.SaveChangesAsync();
+            await _unitofwork.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteStudent(int id)
         {
-            var student = await _customRepo.GetById(id);
+            var student = await _unitofwork.StuedentCustomRepo.GetById(id);
             if (student == null)
             {
                 return NotFound("Student Not Found");
             }
 
-            _customRepo.Delete(student);
+            _unitofwork.StuedentCustomRepo.Delete(student);
             return NoContent();
         }
     }

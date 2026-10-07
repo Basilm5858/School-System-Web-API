@@ -1,8 +1,11 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using School_System.Mapping;
 using School_System.Models;
 using School_System.Repo.Implementations;
 using School_System.Repo.Interfaces;
+using System.Text;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,18 +17,23 @@ builder.Services.AddAutoMapper(cfg =>
     cfg.AddProfile<MappingProfile>();
 });
 
-builder.Services.AddScoped<IGenericRepo<Department>, GenericRepo<Department>>();
-builder.Services.AddScoped<IGenericRepo<ClassRoom>, GenericRepo<ClassRoom>>();
-builder.Services.AddScoped<IGenericRepo<Student>, GenericRepo<Student>>();
-builder.Services.AddScoped<IGenericRepo<Enrollment>, GenericRepo<Enrollment>>();
-builder.Services.AddScoped<IGenericRepo<Teacher>, GenericRepo<Teacher>>();
-builder.Services.AddScoped<IGenericRepo<Subject>, GenericRepo<Subject>>();
+builder.Services.AddScoped<SubjectCustomRepo>();
+builder.Services.AddScoped<AuthCustomRepo>();
+builder.Services.AddScoped<TeacherCustomRepo>();
+builder.Services.AddScoped<DepartmentRepo>();
+builder.Services.AddScoped<EnrollmentCustomRepo>();
+builder.Services.AddScoped<StuedentCustomRepo>();
+builder.Services.AddScoped<ClassRoomCustomRepo>();
+
+
 builder.Services.AddScoped<ISubject ,SubjectCustomRepo>();
+builder.Services.AddScoped<IAuth , AuthCustomRepo>();
 builder.Services.AddScoped<ITeacher, TeacherCustomRepo>();
 builder.Services.AddScoped<IDepartment, DepartmentRepo>();
 builder.Services.AddScoped<IEnrollment , EnrollmentCustomRepo>();
 builder.Services.AddScoped<IStuedent, StuedentCustomRepo>();
 builder.Services.AddScoped<IClassRoom, ClassRoomCustomRepo>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddDbContext<My_AppContext>(options => 
     options.UseSqlServer(
@@ -47,6 +55,25 @@ builder.Services.AddCors(options =>
     });
 });
 
+var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]));
+builder.Services.AddAuthentication(opt =>
+{
+    opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+    .AddJwtBearer(opt =>
+    opt.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidIssuer = builder.Configuration["JWT:Issuer"],
+
+        ValidateAudience = true,
+        ValidAudience = builder.Configuration["JWT:Audience"],
+
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = key
+    });
+
 var app = builder.Build();
 
 app.UseCors("AllowFrontend");
@@ -59,6 +86,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

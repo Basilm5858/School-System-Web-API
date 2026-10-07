@@ -13,18 +13,18 @@ namespace School_System.Controllers
     [ApiController]
     public class ClassRoomsController : ControllerBase
     {
-        private readonly IClassRoom _repo;
+        private readonly IUnitOfWork _unitofwork;
         private readonly IMapper _mapper;
-        public ClassRoomsController(IMapper mapper, IClassRoom repo)
+        public ClassRoomsController(IMapper mapper, IUnitOfWork repo)
         {
-            _repo = repo;
+            _unitofwork = repo;
             _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetClassRooms()
         {
-            var classRooms = await _repo.GetAll();
+            var classRooms = await _unitofwork.ClassRoomCustomRepo.GetAll();
 
             if(classRooms == null)
             {
@@ -40,7 +40,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetClassRoomById(int id)
         {
-            var classRoom = await _repo.GetById(id);
+            var classRoom = await _unitofwork.ClassRoomCustomRepo.GetById(id);
 
             if (classRoom == null)
             {
@@ -62,8 +62,8 @@ namespace School_System.Controllers
                 return BadRequest("ClassRoom Cannot Be Null");
             }
 
-            await _repo.AddAsync(res);
-            await _repo.SaveChangesAsync();
+            await _unitofwork.ClassRoomCustomRepo.AddAsync(res);
+            await _unitofwork.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetClassRoomById), new { id = res.Id }, res);
         }
@@ -71,7 +71,7 @@ namespace School_System.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateClassRoom(int id, UpdateClassRoomsDTO dto)
         {
-            var classRoom = await _repo.GetById(id);
+            var classRoom = await _unitofwork.ClassRoomCustomRepo.GetById(id);
 
             if (classRoom == null)
             {
@@ -79,7 +79,7 @@ namespace School_System.Controllers
             }
 
             var res = _mapper.Map(dto, classRoom);
-            await _repo.SaveChangesAsync();
+            await _unitofwork.SaveChangesAsync();
 
             return NoContent();
         }
@@ -87,21 +87,21 @@ namespace School_System.Controllers
         [HttpDelete]
         public async Task<IActionResult> DeleteClassRoom(int id)
         {
-            var classRoom = await _repo.GetById(id);
+            var classRoom = await _unitofwork.ClassRoomCustomRepo.GetById(id);
 
             if (classRoom == null)
             {
                 return NotFound("ClassRoom Not Found");
             }
 
-            _repo.Delete(classRoom);
-            await _repo.SaveChangesAsync();
+            _unitofwork.ClassRoomCustomRepo.Delete(classRoom);
+            await _unitofwork.SaveChangesAsync();
             return NoContent();
         }
         [HttpGet("EndPoint3")]
         public async Task<IActionResult> EndPoint3(int capacity)
         {
-            var classRoom = await _repo.EndPoint3(capacity);
+            var classRoom = await _unitofwork.ClassRoomCustomRepo.EndPoint3(capacity);
 
             if(classRoom == null)
             {
@@ -113,7 +113,7 @@ namespace School_System.Controllers
         [HttpGet("EndPoint5")]
         public async Task<IActionResult> EndPoint5(string name)
         {
-            var classes = await _repo.EndPoint5(name);
+            var classes = await _unitofwork.ClassRoomCustomRepo.EndPoint5(name);
 
             if (classes == null)
             {
@@ -125,7 +125,7 @@ namespace School_System.Controllers
         [HttpGet("EndPoint8")]
         public async Task<IActionResult> EndPoint8(int index)
         {
-            var classes = await _repo.EndPoint8(index);
+            var classes = await _unitofwork.ClassRoomCustomRepo.EndPoint8(index);
 
             if (classes == null)
             {
@@ -137,9 +137,8 @@ namespace School_System.Controllers
         [HttpGet("EndPoint10")]
         public async Task<IActionResult> EndPoint10(int gradelevel, int capacity)
         {
-            var classes = await _repo.EndPoint10(gradelevel, capacity);
+            var classes = await _unitofwork.ClassRoomCustomRepo.EndPoint10(gradelevel, capacity);
 
-            //var res = _mapper.Map<ClassRoomsDTO>(classes);
             return Ok(classes);
         }
     }

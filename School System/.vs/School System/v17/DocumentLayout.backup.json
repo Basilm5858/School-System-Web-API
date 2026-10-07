@@ -3,8 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\implementations\\enrollmentcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\implementations\\enrollmentcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\implementations\\departmentcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\implementations\\departmentcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\implementations\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\implementations\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\implementations\\authcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\implementations\\authcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\interfaces\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\interfaces\\iauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\interfaces\\iclassroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\interfaces\\iclassroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\implementations\\subjectcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,74 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\interfaces\\isubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\interfaces\\isubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\implementations\\teachercustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\implementations\\teachercustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\interfaces\\iteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\interfaces\\iteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\implementations\\departmentcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\implementations\\departmentcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\interfaces\\idepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\interfaces\\idepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\dtos\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\controllers\\classroomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\classroomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\interfaces\\iclassroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\interfaces\\iclassroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\models\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\dtos\\classroomsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\dtos\\classroomsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\implementations\\enrollmentcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\implementations\\enrollmentcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\interfaces\\istuedent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\interfaces\\istuedent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\interfaces\\ienrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\interfaces\\ienrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\repo\\implementations\\stuedentcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\repo\\implementations\\stuedentcustomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|c:\\users\\basel.muhammed\\desktop\\school-system\\school-system-web-api\\school system\\school system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B5D8E39-7259-4C3D-A5A4-FC8FC03A2889}|School System\\School System.csproj|solutionrelative:school system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,16 +82,224 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "School System\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "School System\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T12:02:53.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "School System\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "School System\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T09:16:44.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\appsettings.json",
+              "RelativeDocumentMoniker": "School System\\appsettings.json",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\appsettings.json",
+              "RelativeToolTip": "School System\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-07T09:43:08.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Program.cs",
+              "RelativeDocumentMoniker": "School System\\Program.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Program.cs",
+              "RelativeToolTip": "School System\\Program.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAkwBkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T09:45:14.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "School System\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "School System\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T09:51:52.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnrollmentController.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\EnrollmentController.cs",
+              "RelativeDocumentMoniker": "School System\\Controllers\\EnrollmentController.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\EnrollmentController.cs",
+              "RelativeToolTip": "School System\\Controllers\\EnrollmentController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAswFoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T09:50:33.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnrollmentCustomRepo.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\EnrollmentCustomRepo.cs",
+              "RelativeDocumentMoniker": "School System\\Repo\\Implementations\\EnrollmentCustomRepo.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\EnrollmentCustomRepo.cs",
+              "RelativeToolTip": "School System\\Repo\\Implementations\\EnrollmentCustomRepo.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T09:50:22.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TeacherController.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\TeacherController.cs",
+              "RelativeDocumentMoniker": "School System\\Controllers\\TeacherController.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\TeacherController.cs",
+              "RelativeToolTip": "School System\\Controllers\\TeacherController.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAswIEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T12:09:46.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "School System\\Repo\\Implementations\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\UnitOfWork.cs",
+              "RelativeToolTip": "School System\\Repo\\Implementations\\UnitOfWork.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAewCIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T09:09:12.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DepartmentCustomRepo.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\DepartmentCustomRepo.cs",
+              "RelativeDocumentMoniker": "School System\\Repo\\Implementations\\DepartmentCustomRepo.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\DepartmentCustomRepo.cs",
+              "RelativeToolTip": "School System\\Repo\\Implementations\\DepartmentCustomRepo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T09:06:38.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthCustomRepo.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\AuthCustomRepo.cs",
+              "RelativeDocumentMoniker": "School System\\Repo\\Implementations\\AuthCustomRepo.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\AuthCustomRepo.cs",
+              "RelativeToolTip": "School System\\Repo\\Implementations\\AuthCustomRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T09:03:55.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "School System\\Repo\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "School System\\Repo\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T09:02:10.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthDTO.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\DTOs\\AuthDTO.cs",
+              "RelativeDocumentMoniker": "School System\\DTOs\\AuthDTO.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\DTOs\\AuthDTO.cs",
+              "RelativeToolTip": "School System\\DTOs\\AuthDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T08:58:36.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IClassRoom.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IClassRoom.cs",
+              "RelativeDocumentMoniker": "School System\\Repo\\Interfaces\\IClassRoom.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IClassRoom.cs",
+              "RelativeToolTip": "School System\\Repo\\Interfaces\\IClassRoom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T09:01:28.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAuth.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IAuth.cs",
+              "RelativeDocumentMoniker": "School System\\Repo\\Interfaces\\IAuth.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IAuth.cs",
+              "RelativeToolTip": "School System\\Repo\\Interfaces\\IAuth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T08:59:34.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Models\\User.cs",
+              "RelativeDocumentMoniker": "School System\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Models\\User.cs",
+              "RelativeToolTip": "School System\\Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T07:27:14.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "SubjectCustomRepo.cs",
               "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\SubjectCustomRepo.cs",
               "RelativeDocumentMoniker": "School System\\Repo\\Implementations\\SubjectCustomRepo.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\SubjectCustomRepo.cs*",
-              "RelativeToolTip": "School System\\Repo\\Implementations\\SubjectCustomRepo.cs*",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\SubjectCustomRepo.cs",
+              "RelativeToolTip": "School System\\Repo\\Implementations\\SubjectCustomRepo.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAswD8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-29T12:12:28.753Z",
@@ -107,243 +307,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 17,
               "Title": "ISubject.cs",
               "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\ISubject.cs",
               "RelativeDocumentMoniker": "School System\\Repo\\Interfaces\\ISubject.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\ISubject.cs*",
-              "RelativeToolTip": "School System\\Repo\\Interfaces\\ISubject.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\ISubject.cs",
+              "RelativeToolTip": "School System\\Repo\\Interfaces\\ISubject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-29T12:11:38.062Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TeacherController.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\TeacherController.cs",
-              "RelativeDocumentMoniker": "School System\\Controllers\\TeacherController.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\TeacherController.cs",
-              "RelativeToolTip": "School System\\Controllers\\TeacherController.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAiwIEAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T12:09:46.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SubjectController.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\SubjectController.cs",
-              "RelativeDocumentMoniker": "School System\\Controllers\\SubjectController.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\SubjectController.cs*",
-              "RelativeToolTip": "School System\\Controllers\\SubjectController.cs*",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAcwJEAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T11:33:57.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeacherCustomRepo.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\TeacherCustomRepo.cs",
-              "RelativeDocumentMoniker": "School System\\Repo\\Implementations\\TeacherCustomRepo.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\TeacherCustomRepo.cs",
-              "RelativeToolTip": "School System\\Repo\\Implementations\\TeacherCustomRepo.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowDYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T07:15:02.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IDepartment.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IDepartment.cs",
-              "RelativeDocumentMoniker": "School System\\Repo\\Interfaces\\IDepartment.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IDepartment.cs",
-              "RelativeToolTip": "School System\\Repo\\Interfaces\\IDepartment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T09:11:54.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DepartmentCustomRepo.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\DepartmentCustomRepo.cs",
-              "RelativeDocumentMoniker": "School System\\Repo\\Implementations\\DepartmentCustomRepo.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\DepartmentCustomRepo.cs",
-              "RelativeToolTip": "School System\\Repo\\Implementations\\DepartmentCustomRepo.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T08:07:11.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ITeacher.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\ITeacher.cs",
-              "RelativeDocumentMoniker": "School System\\Repo\\Interfaces\\ITeacher.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\ITeacher.cs",
-              "RelativeToolTip": "School System\\Repo\\Interfaces\\ITeacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T07:14:26.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SubjectDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\DTOs\\SubjectDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\SubjectDTO.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\DTOs\\SubjectDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\SubjectDTO.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwA8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T11:29:59.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ClassRoomsController.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\ClassRoomsController.cs",
-              "RelativeDocumentMoniker": "School System\\Controllers\\ClassRoomsController.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\ClassRoomsController.cs",
-              "RelativeToolTip": "School System\\Controllers\\ClassRoomsController.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAA4wI4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T07:25:51.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IClassRoom.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IClassRoom.cs",
-              "RelativeDocumentMoniker": "School System\\Repo\\Interfaces\\IClassRoom.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IClassRoom.cs",
-              "RelativeToolTip": "School System\\Repo\\Interfaces\\IClassRoom.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T08:07:30.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ClassRoom.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Models\\ClassRoom.cs",
-              "RelativeDocumentMoniker": "School System\\Models\\ClassRoom.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Models\\ClassRoom.cs",
-              "RelativeToolTip": "School System\\Models\\ClassRoom.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T10:15:18.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ClassRoomsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\DTOs\\ClassRoomsDTO.cs",
-              "RelativeDocumentMoniker": "School System\\DTOs\\ClassRoomsDTO.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\DTOs\\ClassRoomsDTO.cs",
-              "RelativeToolTip": "School System\\DTOs\\ClassRoomsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T10:15:12.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EnrollmentCustomRepo.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\EnrollmentCustomRepo.cs",
-              "RelativeDocumentMoniker": "School System\\Repo\\Implementations\\EnrollmentCustomRepo.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\EnrollmentCustomRepo.cs",
-              "RelativeToolTip": "School System\\Repo\\Implementations\\EnrollmentCustomRepo.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADgvxgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T09:12:01.233Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IStuedent.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IStuedent.cs",
-              "RelativeDocumentMoniker": "School System\\Repo\\Interfaces\\IStuedent.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IStuedent.cs",
-              "RelativeToolTip": "School System\\Repo\\Interfaces\\IStuedent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T09:36:23.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EnrollmentController.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\EnrollmentController.cs",
-              "RelativeDocumentMoniker": "School System\\Controllers\\EnrollmentController.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\EnrollmentController.cs",
-              "RelativeToolTip": "School System\\Controllers\\EnrollmentController.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAswBIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T09:29:49.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IEnrollment.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IEnrollment.cs",
-              "RelativeDocumentMoniker": "School System\\Repo\\Interfaces\\IEnrollment.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Interfaces\\IEnrollment.cs",
-              "RelativeToolTip": "School System\\Repo\\Interfaces\\IEnrollment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T09:24:42.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Program.cs",
-              "RelativeDocumentMoniker": "School System\\Program.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Program.cs",
-              "RelativeToolTip": "School System\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T09:01:04.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "StuedentCustomRepo.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\StuedentCustomRepo.cs",
-              "RelativeDocumentMoniker": "School System\\Repo\\Implementations\\StuedentCustomRepo.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Repo\\Implementations\\StuedentCustomRepo.cs",
-              "RelativeToolTip": "School System\\Repo\\Implementations\\StuedentCustomRepo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T09:12:06.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "School System\\Controllers\\DepartmentController.cs",
-              "ToolTip": "C:\\Users\\basel.muhammed\\Desktop\\School-System\\School-System-Web-API\\School System\\School System\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "School System\\Controllers\\DepartmentController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwEoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T09:05:15.315Z"
             }
           ]
         }

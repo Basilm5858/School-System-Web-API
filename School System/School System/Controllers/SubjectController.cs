@@ -13,18 +13,18 @@ namespace School_System.Controllers
     [ApiController]
     public class SubjectController : ControllerBase
     {
-        private readonly ISubject _customRepo;
+        private readonly IUnitOfWork _unitofwork;
         private readonly IMapper _mapper;
 
-        public SubjectController(IMapper mapper, ISubject customRepo)
+        public SubjectController(IMapper mapper, IUnitOfWork customRepo)
         {
             _mapper = mapper;
-            _customRepo = customRepo;
+            _unitofwork = customRepo;
         }
         [HttpGet]
         public async Task<IActionResult> GetSubject()
         {
-            var subjects = await _customRepo.GetSubjectsWithTeachers();
+            var subjects = await _unitofwork.SubjectCustomRepo.GetSubjectsWithTeachers();
 
             var res = _mapper.Map<List<SubjectDTO>>(subjects);
 
@@ -34,7 +34,7 @@ namespace School_System.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var subject = await _customRepo.GetById(id);
+            var subject = await _unitofwork.StuedentCustomRepo.GetById(id);
 
             if (subject == null)
             {
@@ -57,43 +57,43 @@ namespace School_System.Controllers
                 return BadRequest("ClassRoom Cannot Be Null");
             }
 
-            await _customRepo.AddAsync(subject);
-            await _customRepo.SaveChangesAsync();
+            await _unitofwork.SubjectCustomRepo.AddAsync(subject);
+            await _unitofwork.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = subject.Id }, subject);
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateSubject(int id, UpdateSubjectDTO dto)
         {
-            var subject = await _customRepo.GetById(id);
+            var subject = await _unitofwork.SubjectCustomRepo.GetById(id);
             if (subject == null)
             {
                 return NotFound("Subject Not Found");
             }
 
             _mapper.Map(dto, subject);
-            await _customRepo.SaveChangesAsync();
+            await _unitofwork.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteSubject(int id)
         {
-            var subject = await _customRepo.GetById(id);
+            var subject = await _unitofwork.SubjectCustomRepo.GetById(id);
             if (subject == null)
             {
                 return NotFound("Student Not Found");
             }
 
-            _customRepo.Delete(subject);
-            await _customRepo.SaveChangesAsync();
+            _unitofwork.SubjectCustomRepo.Delete(subject);
+            await _unitofwork.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpGet("EndPoint2")]
         public async Task<IActionResult> EndPoint2(int id)
         {
-            var subject = await _customRepo.EndPoint2Async(id);
+            var subject = await _unitofwork.SubjectCustomRepo.EndPoint2Async(id);
             if(subject == null)
             {
                 return NotFound();
@@ -105,7 +105,7 @@ namespace School_System.Controllers
         [HttpGet("EndPoint7")]
         public async Task<IActionResult> EndPoint7(int teacherid)
         {
-            var subject = await _customRepo.EndPoint7(teacherid);
+            var subject = await _unitofwork.SubjectCustomRepo.EndPoint7(teacherid);
 
             if (subject == null)
             {
@@ -118,7 +118,7 @@ namespace School_System.Controllers
         [HttpGet("EndPoint11")]
         public async Task<IActionResult> EndPoint11(int id1, int id2, int id3)
         {
-            var subject = await _customRepo.EndPoint11(id1, id2, id3);
+            var subject = await _unitofwork.SubjectCustomRepo.EndPoint11(id1, id2, id3);
 
             //var res = _mapper.Map<List<SubjectDTO>>(subject);
 
@@ -128,14 +128,14 @@ namespace School_System.Controllers
         [HttpGet("EndPoint13")]
         public async Task<IActionResult> EndPoint13(int teacherid)
         {
-            var subject = await _customRepo.EndPoint13(teacherid);
+            var subject = await _unitofwork.SubjectCustomRepo.EndPoint13(teacherid);
 
             return Ok(subject);
         }
         [HttpGet("EndPoint14")]
         public async Task<IActionResult> EndPoint14(int departmentid)
         {
-            var subject = await _customRepo.EndPoint14(departmentid);
+            var subject = await _unitofwork.SubjectCustomRepo.EndPoint14(departmentid);
 
             return Ok(subject);
         }
@@ -143,7 +143,7 @@ namespace School_System.Controllers
         [HttpGet("EndPoint16")]
         public async Task<IActionResult> EndPoint16()
         {
-            var subject = await _customRepo.EndPoint16();
+            var subject = await _unitofwork.SubjectCustomRepo.EndPoint16();
 
             return Ok(subject);
         }

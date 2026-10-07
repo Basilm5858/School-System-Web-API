@@ -292,3 +292,4 @@ C:\Users\basel.muhammed\Desktop\School-System\School-System-Web-API\School Syste
 C:\Users\basel.muhammed\Desktop\School-System\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.pdb
 C:\Users\basel.muhammed\Desktop\School-System\School-System-Web-API\School System\School System\obj\Debug\net8.0\School System.genruntimeconfig.cache
 C:\Users\basel.muhammed\Desktop\School-System\School-System-Web-API\School System\School System\obj\Debug\net8.0\ref\School System.dll
+C:\Users\basel.muhammed\Desktop\School-System\School-System-Web-API\School System\School System\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

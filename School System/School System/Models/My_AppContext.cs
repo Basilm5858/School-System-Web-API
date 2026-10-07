@@ -15,6 +15,7 @@ namespace School_System.Models
         public DbSet<ClassRoom> Classrooms { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<User> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Teacher>()
@@ -59,6 +60,7 @@ namespace School_System.Models
             modelBuilder.Entity<Student>().Property(x => x.Email).IsRequired();
             modelBuilder.Entity<Student>().Property(x => x.Email).HasMaxLength(100);
             modelBuilder.Entity<Student>().Property(x => x.DateOfBirth).IsRequired();
+            modelBuilder.Entity<User>().HasIndex(x => x.UserName).IsUnique();
 
 
             modelBuilder.Entity<ClassRoom>().HasData(new ClassRoom { Id = 1, Name = "Room 101", GradeLevel = 10, Capacity = 30 });

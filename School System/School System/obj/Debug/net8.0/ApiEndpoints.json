@@ -138,6 +138,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "School_System.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "School_System.DTOs.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "School_System.Controllers.ClassRoomsController",
     "Method": "GetClassRooms",
     "RelativePath": "api/ClassRooms",
